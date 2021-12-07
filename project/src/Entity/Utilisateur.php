@@ -27,6 +27,11 @@ class Utilisateur
      */
     private $Surname;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="utilisateurs")
+     */
+    private $Classe;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -52,6 +57,18 @@ class Utilisateur
     public function setSurname(string $Surname): self
     {
         $this->Surname = $Surname;
+
+        return $this;
+    }
+
+    public function getClasse(): ?Classe
+    {
+        return $this->Classe;
+    }
+
+    public function setClasse(?Classe $Classe): self
+    {
+        $this->Classe = $Classe;
 
         return $this;
     }
