@@ -4,9 +4,9 @@
 
     <ol>
 
-        <a class="Presentation" href="/presentation">Presentation</a>
-        <a class="Classes">Nos Classes</a>
-        <a class="Équipe pédagogique">Équipe pédagogique</a>
+        <a href="/presentation">Presentation</a>
+        <a>Nos Classes</a>
+        <a>Équipe pédagogique</a>
         <a class="Connexion"><i class="fa fa-user" size:5x></i>Connexion</a>
 
     </ol>
