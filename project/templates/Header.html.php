@@ -1,15 +1,24 @@
 <nav class="navbar">
 
-    <a href="/"><img id="logoecole" src=".\img\logoecole.png"></a>
+    <ul class="horizontal">
 
-    <ol>
+        <li class="accueil">
+            <a href="/"><img id="logoecole" src=".\img\logoecole.png"></a>
+        </li>
+        <li class="presentation">
+            <a href="/presentation">Présentation</a>
+        </li>
+        <li class="classes">
+            <a href="/classes">Nos Classes</a>
+        </li>
+        <li class="equipe">
+            <a href="/equipe">Équipe pédagogique</a>
+        </li>
+        <li class="Connexion">
+            <a href="/connexion">Connexion</a>
+        </li>
 
-        <a href="/presentation">Presentation</a>
-        <a>Nos Classes</a>
-        <a>Équipe pédagogique</a>
-        <a class="Connexion"><i class="fa fa-user" size:5x></i>Connexion</a>
-
-    </ol>
+    </ul>
 
 
 </nav>

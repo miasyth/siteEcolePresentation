@@ -1,37 +1,30 @@
 /*   HEADER   */
 
-header {
-    background-color: #FFFFFF;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     background-color: white;
-}
-
-ol{
     display: flex;
-    margin-left: 10%;
-    width: 40%;
-}
-
-ol a {
-    list-style: none;
-    padding-top: 7%;
-    margin-left: 10%;
-}
-
-.Connexion {
-    display: flex;
-    float: right;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
-.fa-user{
-    font-size: 20px;
+.presentation a {
+    color: #40a4bc;
+}
+
+.classes a {
+    color: #82b442;
+}
+
+.equipe a {
+    color: #ea7d44;
+}
+
+.Connexion a {
+    color: #b1434a;
+    margin-right: 16px
 }
 
 #logoecole {
@@ -95,6 +88,14 @@ ol a {
 body{
     background-color: #C4C4C4;
     margin: unset;
+}
+
+/*____________________________________________________________*/
+
+/*   FOOTER   */
+
+#gmaps {
+    border: 0;
 }
 
 /*____________________________________________________________*/

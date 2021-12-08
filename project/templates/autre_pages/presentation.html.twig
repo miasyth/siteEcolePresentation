@@ -3,8 +3,14 @@
 {% block title %}Presentation{% endblock %}
 
 {% block body %}
-<div>
-    <h1>Presentation</h1>
-    <p>Text</p>
-</div>
+    <div>
+        <h1>Presentation</h1>
+        <p>Text</p>
+    </div>
+
+    <div class="maps">
+        <p>Voici l'emplacement de notre etablissement:</p>
+        <iframe id="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6062.900696647676!2d2.77699406664248!3d50.28939417001118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd4876a03da4e5%3A0xd539c81bd012fd24!2sEcole%20Sainte%20Marie%20de%20la%20Pr%C3%A9sentation!5e0!3m2!1sfr!2sfr!4v1638785443439!5m2!1sfr!2sfr"
+        width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 {% endblock %}
