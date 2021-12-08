@@ -1,0 +1,47 @@
+/*   HEADER   */
+header {
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+ol{
+    display: flex;
+    margin-left: 10%;
+}
+
+li {
+    list-style: none;
+    padding-left: 40%;
+    padding-top: 15%;
+}
+
+.Connexion {
+    padding-left: 80%;
+}
+
+.logoecole {
+    margin-left: 2%;
+    width: 200px;
+}
+/*____________________________________________________________*/
+
+/*    BODY    */
+
+body{
+    background-color: #C4C4C4;
+    margin: unset;
+}
+
+
+/*   FOOTER   */
+
+
+footer {
+    background-color: #2F2C2C;
+    color: #FFFFFF;
+    display: flex;
+}
