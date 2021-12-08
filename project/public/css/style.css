@@ -100,6 +100,35 @@ body{
 
 footer {
     background-color: #2F2C2C;
+    font-size: 20px;
     color: #FFFFFF;
     display: flex;
+    flex-direction: row;
+
 }
+
+.footer_div {
+    display: flex;
+    flex-grow: 1; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer div {
+    padding-left: 3%;
+}
+
+
+.mention {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 5%;
+    flex-grow: 2;
+}
+
+footer a {
+    text-decoration: unset;
+    color: unset;
+}
+
+
