@@ -13,13 +13,17 @@
 
     <body>
 
-        {% include "/Header.html.php" %}
+        {% block header %}
+            {% include "/Header.html.php" %}
+        {% endblock %}
 
         {% include "/perm_content.html.php" %}
 
         {% block body %}{% endblock %}
 
-        {% include "/Footer.html.php" %}
+        {% block fouter %}
+            {% include "/Footer.html.php" %}
+        {% endblock %}
 
         {% block javascripts %}{% endblock %}
 

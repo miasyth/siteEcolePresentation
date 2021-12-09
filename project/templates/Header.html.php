@@ -14,6 +14,9 @@
         <li class="equipe">
             <a href="/equipe">Équipe pédagogique</a>
         </li>
+        <li class="evenements">
+            <a href="/evenements">Evenements</a>
+        </li>
         <li class="Connexion">
             <a href="/connexion">Connexion</a>
         </li>
