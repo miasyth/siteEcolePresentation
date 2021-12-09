@@ -189,3 +189,12 @@ footer a {
     text-decoration: unset;
     color: unset;
 }
+
+/*____________________________________________________________*/
+
+/*   Presentation   */
+
+.container{
+    display: flex;
+    margin-left: 15%;
+}
