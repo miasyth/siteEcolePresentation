@@ -22,8 +22,12 @@ ul.horizontal {
     color: #ea7d44;
 }
 
-.Connexion a {
+.evenements a {
     color: #b1434a;
+}
+
+.Connexion a {
+    color: black;
     margin-right: 16px
 }
 
