@@ -95,11 +95,11 @@ ul.horizontal {
 
 /*    BODY    */
 
-
 body{
     margin: unset;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
@@ -139,12 +139,14 @@ main textarea {
     border-radius: 10px;
     resize: none;
 }
+
 .btn_form{
     text-align: right;
     padding-right: 65px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
 #btn {
     width: 100px;
     height: 40px;
@@ -155,7 +157,7 @@ main textarea {
 
 /*____________________________________________________________*/
 
-/*   FOOTER   */
+/*   Google maps   */
 
 #gmaps {
     border: 0;
@@ -185,7 +187,6 @@ footer {
 footer div {
     padding-left: 3%;
 }
-
 
 .mention {
     display: flex;
