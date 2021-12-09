@@ -202,11 +202,15 @@ footer a {
 
 /*____________________________________________________________*/
 
-/*   Presentation   */
+/*   Pages   */
 
 .container{
     display: flex;
     margin-left: 15%;
     margin-right: 8%;
     text-align: justify;
+}
+
+.container_title{
+    width: 20%;
 }
