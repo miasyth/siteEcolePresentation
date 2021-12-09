@@ -96,6 +96,54 @@ body{
     margin: unset;
 }
 
+main {
+    text-align: center;
+    min-height: 60vh;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    column-gap: 165px;
+}
+
+#Nom{
+    border-radius: 10px;
+}
+
+#Email{
+    width: 300px;
+    border-radius: 10px;
+}
+
+#Objet{
+    width: 300px;
+    border-radius: 10px;
+}
+
+main textarea {
+    width: 1400px;
+    height: 220px;
+    border-radius: 10px;
+    resize: none;
+}
+.btn_form{
+    text-align: right;
+    padding-right: 65px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#btn {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
 /*____________________________________________________________*/
 
 /*   FOOTER   */
@@ -108,12 +156,14 @@ body{
 
 /*   FOOTER   */
 
+
 footer {
     background-color: #2F2C2C;
     font-size: 20px;
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
+    margin-top: auto;
 }
 
 .footer_div {
