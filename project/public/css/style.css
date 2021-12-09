@@ -157,6 +157,22 @@ main textarea {
 
 /*____________________________________________________________*/
 
+/*   Containers   */
+
+.container{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 8%;
+    text-align: justify;
+}
+
+.container_title{
+    width: 20%;
+}
+
+
+/*____________________________________________________________*/
+
 /*   Google maps   */
 
 #gmaps {
@@ -198,19 +214,4 @@ footer div {
 footer a {
     text-decoration: unset;
     color: unset;
-}
-
-/*____________________________________________________________*/
-
-/*   Pages   */
-
-.container{
-    display: flex;
-    margin-left: 15%;
-    margin-right: 8%;
-    text-align: justify;
-}
-
-.container_title{
-    width: 20%;
 }
