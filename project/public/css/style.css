@@ -198,4 +198,10 @@ footer a {
 .container{
     display: flex;
     margin-left: 15%;
+    margin-right: 8%;
+}
+
+.p {
+    display: flex;
+    justify-content: start;
 }
