@@ -17,7 +17,7 @@
         <li class="evenements">
             <a href="/evenements">Evenements</a>
         </li>
-        <li class="Connexion">
+        <li class="connexion">
             <a href="/connexion">Connexion</a>
         </li>
 
