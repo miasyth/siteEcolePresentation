@@ -1,3 +1,11 @@
+/*   Font   */
+
+* {
+    font-family: Verdana, sans-serif;
+}
+
+/*____________________________________________________________*/
+
 /*   HEADER   */
 
 ul.horizontal {
@@ -43,8 +51,6 @@ ul.horizontal {
     border: 0;
 }
 
-/* Fixed/sticky icon bar */
-
 .icon-bar {
     position: fixed;
     top: 50%;
@@ -52,8 +58,6 @@ ul.horizontal {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
-/* Style the icon bar links */
 
 .icon-bar a {
     display: block;
@@ -63,8 +67,6 @@ ul.horizontal {
     color: white;
     font-size: 20px;
 }
-
-/* Style the social media icons with color */
 
 .icon-bar a:hover {
     background-color: #000;
