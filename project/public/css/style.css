@@ -92,11 +92,12 @@ ul.horizontal {
 /*    BODY    */
 
 body{
-    background-color: #C4C4C4;
     margin: unset;
 }
 
 main {
+    background-color: #C4C4C4;
+    padding-top: 10px;
     text-align: center;
     min-height: 60vh;
 }
