@@ -8,6 +8,10 @@
 
 /*   HEADER   */
 
+header { 
+    min-height: 15%;
+}
+
 ul.horizontal {
     list-style-type: none;
     margin: 0;
@@ -91,42 +95,46 @@ ul.horizontal {
 
 /*    BODY    */
 
+
 body{
     margin: unset;
+    width: 100%;
+    height: 100%;
 }
 
 main {
     background-color: #C4C4C4;
     padding-top: 10px;
     text-align: center;
-    min-height: 60vh;
+    min-height: 70%;
 }
 
 .input_form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 40px;
+    padding-left: 5%;
     padding-bottom: 20px;
-    column-gap: 165px;
+    column-gap: 10%;
 }
 
 #Nom{
+    width: 120px;
     border-radius: 10px;
 }
 
 #Email{
-    width: 300px;
+    width: 250px;
     border-radius: 10px;
 }
 
 #Objet{
-    width: 300px;
+    width: 250px;
     border-radius: 10px;
 }
 
 main textarea {
-    width: 1400px;
+    width: 90%;
     height: 220px;
     border-radius: 10px;
     resize: none;
@@ -157,7 +165,6 @@ main textarea {
 
 /*   FOOTER   */
 
-
 footer {
     background-color: #2F2C2C;
     font-size: 20px;
@@ -165,6 +172,7 @@ footer {
     display: flex;
     flex-direction: row;
     margin-top: auto;
+    min-height: 15%;
 }
 
 .footer_div {
@@ -199,9 +207,5 @@ footer a {
     display: flex;
     margin-left: 15%;
     margin-right: 8%;
-}
-
-.p {
-    display: flex;
-    justify-content: start;
+    text-align: justify;
 }
