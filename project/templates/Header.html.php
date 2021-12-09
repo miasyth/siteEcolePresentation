@@ -23,6 +23,4 @@
 
     </ul>
 
-    <hr size="2" color="grey">
-
 </nav>
