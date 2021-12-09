@@ -171,14 +171,8 @@ main textarea {
     width: 20%;
 }
 
-.slides {
-    width: 20%;
-}
-
-
-.slide {
-    float: left;
-    width: 20%;
+#image {
+    width: 30%;
 }
 
 /*____________________________________________________________*/
