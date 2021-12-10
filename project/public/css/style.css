@@ -38,10 +38,12 @@ ul.horizontal {
 .evenements a {
     color: #b1434a;
 }
+.connexion {
+    margin-right: 40px
+}
 
 .connexion a {
     color: black;
-    margin-right: 16px
 }
 
 #logoecole {
