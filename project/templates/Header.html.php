@@ -12,7 +12,7 @@
             <a href="/classes">Nos Classes</a>
         </li>
         <li class="equipe">
-            <a href="/equipe">Équipe pédagogique</a>
+            <a href="/equipe_pedagogique">Équipe pédagogique</a>
         </li>
         <li class="evenements">
             <a href="/evenements">Evenements</a>
