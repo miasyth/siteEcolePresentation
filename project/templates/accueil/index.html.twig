@@ -4,56 +4,56 @@
 
 {% block body %}
 
-<h1 classe="titre">
-    Enseignement catholique <br>
-    Sainte Marie de la Présentation
-</h1>
+  <h1 classe="titre">
+      Enseignement catholique <br>
+      Sainte Marie de la Présentation
+  </h1>
 
-<div class="slideshow-container">
+  <div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <img id="image_accueil" src=".\img\Facade\facade5.jpeg">
-    </div>
-    
-    <div class="mySlides fade">
-      <img id="image_accueil" src=".\img\CoursRecre\cours.jpeg">
-    </div>
-    
-    <div class="mySlides fade">
-      <img id="image_accueil" src=".\img\Biblio\Biblio1.jpeg">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
+      <div class="mySlides fade">
+        <img id="image_accueil" src=".\img\Facade\facade5.jpeg">
+      </div>
+      
+      <div class="mySlides fade">
+        <img id="image_accueil" src=".\img\CoursRecre\cours.jpeg">
+      </div>
+      
+      <div class="mySlides fade">
+        <img id="image_accueil" src=".\img\Biblio\Biblio1.jpeg">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
 
-<div class="maps">
-    <p>Voici l'emplacement de notre etablissement:</p>
-    <iframe id="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6062.900696647676!2d2.77699406664248!3d50.28939417001118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd4876a03da4e5%3A0xd539c81bd012fd24!2sEcole%20Sainte%20Marie%20de%20la%20Pr%C3%A9sentation!5e0!3m2!1sfr!2sfr!4v1638785443439!5m2!1sfr!2sfr"
-    width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
-</div>
+  <div class="maps">
+      <p>Voici l'emplacement de notre etablissement:</p>
+      <iframe id="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6062.900696647676!2d2.77699406664248!3d50.28939417001118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd4876a03da4e5%3A0xd539c81bd012fd24!2sEcole%20Sainte%20Marie%20de%20la%20Pr%C3%A9sentation!5e0!3m2!1sfr!2sfr!4v1638785443439!5m2!1sfr!2sfr"
+      width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
+  </div>
 
-<main>
-    <h1>Formulaire de contact</h1>
-    <form action="">
-        <div class="input_form">
-            <input id="Nom"   type="text" placeholder="Nom et Prénom" tabindex="1"/>
-            <input id="Email" type="email" placeholder="Email" tabindex="2"/>
-            <input id="Objet" type="text" placeholder="Objet" tabindex="3"/></br></br>
-        </div>
-        <textarea id="textarea" tabindex="4"></textarea></br>
-        <div class="btn_form">
-            <input id="btn" type="submit" tabindex="5" /></br>
-        </div>
-    </form>
-</main>
+  <main>
+      <h1>Formulaire de contact</h1>
+      <form action="">
+          <div class="input_form">
+              <input id="Nom"   type="text" placeholder="Nom et Prénom" tabindex="1"/>
+              <input id="Email" type="email" placeholder="Email" tabindex="2"/>
+              <input id="Objet" type="text" placeholder="Objet" tabindex="3"/></br></br>
+          </div>
+          <textarea id="textarea" tabindex="4"></textarea></br>
+          <div class="btn_form">
+              <input id="btn" type="submit" tabindex="5" /></br>
+          </div>
+      </form>
+  </main>
 
 {% endblock %}
