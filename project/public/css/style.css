@@ -243,6 +243,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  width: 50%;
 }
 
 /* Next & previous buttons */
@@ -329,8 +330,4 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-}
-
-.slideshow-container {
-    width: 50%;
 }
