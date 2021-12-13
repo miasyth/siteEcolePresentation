@@ -159,6 +159,10 @@ main textarea {
     text-align: center;
 }
 
+a.classe img{
+    width: 800px;
+}
+
 /*____________________________________________________________*/
 
 /*   Containers   */
