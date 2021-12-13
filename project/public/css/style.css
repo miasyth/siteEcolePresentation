@@ -159,6 +159,12 @@ main textarea {
     text-align: center;
 }
 
+a.classe p{
+    padding-top: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
 a.classe img{
     width: 800px;
 }
