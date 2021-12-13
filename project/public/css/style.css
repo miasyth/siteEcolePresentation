@@ -174,14 +174,18 @@ a.classe img{
 /*   Containers   */
 
 .container{
-    display: flex;
+    display: column;
     margin-left: 15%;
-    margin-right: 8%;
+    margin-right: 15%;
     text-align: justify;
 }
 
 #image {
     width: 30%;
+}
+
+.equipePeda { /* taille image equipe pedagogique */
+    width: 20%;
 }
 
 /*____________________________________________________________*/
