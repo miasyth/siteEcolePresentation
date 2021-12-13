@@ -3,26 +3,34 @@
 {% block title %}Evenements{% endblock %}
 
 {% block body  %}
-  <h4>Evenements à venir</h4>
 
-  <div class="slideshow-container">
+    <div class= "container">
+        <div>
+            <h4>Evenements à venir</h4>
 
-      <div class="mySlides fade">
-        <img id="image_event" src="img\Evenement\Evenement.jpg">
-      </div>
-      
-      <div class="mySlides fade">
-        <img id="image_event" src="img\Evenement\Evenement1.jpeg">
-      </div>
-      
-      <div class="mySlides fade">
-        <img id="image_event" src="img\CoursRecre\cours.jpeg">
-      </div>
-      
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-      </div>
+            <hr width="20%" color= "#b1434a" align="left">
 
-  <h4>Evenements passés</h4>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img id="image_event" src="img\Evenement\Evenement.jpg">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img id="image_event" src="img\Evenement\Evenement1.jpeg">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img id="image_event" src="img\CoursRecre\cours.jpeg">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+
+            <h4>Evenements passés</h4>
+        </div>
+    </div>
+
 {% endblock %}
