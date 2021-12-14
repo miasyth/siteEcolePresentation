@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{# page title #}{% endblock %}
+
+{# if you use specific CSS:
+{% block style %}
+{% endblock %}
+#}
+
+
+{# if you want to enable background:
+{% block background %}
+<body background="img/EntreEcoleCP/Esca.jpeg">
+    <div class="background">
+{% endblock %}
+#}
+
+{% block body  %}
+
+    <div class= "container">
+        <div>
+            <h4>{# title of container #}</h4>
+
+            <hr width="20%" color= "{# color of folder #}" align="left">
+            
+            {# Main content of page goes here #}
+                
+        </div>
+    </div>
+
+{% endblock %}
+
+{# if you use specific JS:
+{% block javascripts %}
+{% endblock %}
+#}
