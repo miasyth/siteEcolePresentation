@@ -166,21 +166,6 @@ textarea {
     text-align: center;
 }
 
-a.classe p{
-    width: 800px;
-    padding-top: 25px;
-    font-size: 20px;
-    text-align: center;
-}
-
-a.classe img{
-    width: 800px;
-}
-
-.titre {
-    text-align: center;
-}
-
 /*____________________________________________________________*/
 
 /*   Containers   */
@@ -198,6 +183,27 @@ a.classe img{
 
 .equipePeda { /* taille image equipe pedagogique */
     width: 20%;
+}
+
+a.classe p{
+    padding-top: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+a.classe *{
+    width: 425px;
+    padding-right: 25px;
+}
+
+.titre {
+    text-align: center;
+}
+
+.listeClasse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /*____________________________________________________________*/
