@@ -282,6 +282,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 img {vertical-align: middle;}
 
 /* Slideshow container */
+
 /*.slideshow-container {
     position: relative;
     height: 400px;
@@ -375,7 +376,12 @@ img {vertical-align: middle;}
 #image_presentation {
     width: 100%;
 }
-
+#image_event{
+    height: 400px;
+}
+#image_accueil{
+    height: 400px;
+}
 * {
     box-sizing: border-box;
   }
@@ -384,7 +390,11 @@ img {vertical-align: middle;}
   .container {
     position: relative;
   }
-  
+
+  .slideshow-container {
+    text-align: center;
+}
+
   /* Hide the images by default */
   .mySlides {
     display: none;

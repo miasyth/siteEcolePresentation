@@ -1,8 +1,14 @@
 var slideIndex = 1;
+
+let carrousel = getElementsByClassName("slideshow-container");
+
+let carrousel2 = getElementsByClassName("slideshow-container2");
+
 showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function plusSlides(n,idCarrousel) {
+    let CurrentCarrousel = getElementById(idCarrousel);
+        showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
