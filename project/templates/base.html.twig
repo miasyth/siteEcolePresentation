@@ -12,7 +12,10 @@
     </head>
 
         <body background="img/EntreEcoleCP/Esca.jpeg">
-            <div class="background">
+
+            {% block background %}
+                <div class="background">
+            {% endblock %}
 
             {% block header %}
                 {% include "/Header.html.php" %}

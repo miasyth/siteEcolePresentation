@@ -103,6 +103,10 @@ ul.horizontal {
     background: rgba(255, 255, 255, 0.5);
 }
 
+.nobackground {
+    background: white;
+}
+
 body{
     margin: unset;
     display: flex;
