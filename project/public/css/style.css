@@ -181,6 +181,15 @@ a.classe img{
     text-align: center;
 }
 
+.event_futur {
+    display: flex;
+    flex-direction: column;
+}
+.event_passer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
 /*____________________________________________________________*/
 
 /*   Containers   */
@@ -245,6 +254,8 @@ footer a {
     color: unset;
 }
 
+
+
 /*____________________________________________________________*/
 
 /*   caroussel   */
@@ -293,6 +304,18 @@ img {vertical-align: middle;}
     user-select: none;
     border-radius: 3px 0 0 3px;
 }
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
 
 /* Fading animation */
 .fade {
