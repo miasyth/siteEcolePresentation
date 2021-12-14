@@ -8,23 +8,23 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ClasseController extends AbstractController
 {
-    #[Route('/TPS', name: 'tres_petite_section')]
-    public function index(): Response
-    {
-        return $this->render('classe/TPS.html.twig', [
-            'controller_name' => 'ClasseController',
-        ]);
-    }
-
     #[Route('/classe', name: 'classe')]
-    public function TPS(): Response
+    public function index(): Response
     {
         return $this->render('classe/classe.html.twig', [
             'controller_name' => 'ClasseController',
         ]);
     }
 
-    #[Route('/PS-MS', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/TPS', name: 'tres_petite_section')]
+    public function TPS(): Response
+    {
+        return $this->render('classe/TPS.html.twig', [
+            'controller_name' => 'ClasseController',
+        ]);
+    }
+
+    #[Route('/classe/PS-MS', name: 'petite_et_moyenne_section')]
     public function PSMS(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -32,7 +32,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/MS', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/MS', name: 'petite_et_moyenne_section')]
     public function MS(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -40,7 +40,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/GS', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/GS', name: 'petite_et_moyenne_section')]
     public function GS(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -48,7 +48,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/CP_1', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/CP_1', name: 'petite_et_moyenne_section')]
     public function CP_1(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -56,7 +56,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/CP_2', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/CP_2', name: 'petite_et_moyenne_section')]
     public function CP_2(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -64,7 +64,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/CE1', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/CE1', name: 'petite_et_moyenne_section')]
     public function CE1(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -72,7 +72,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/CE12', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/CE12', name: 'petite_et_moyenne_section')]
     public function CE12(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -80,7 +80,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/CE2', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/CE2', name: 'petite_et_moyenne_section')]
     public function CE2(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -88,7 +88,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/CM1', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/CM1', name: 'petite_et_moyenne_section')]
     public function CM1(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -96,7 +96,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/CM12', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/CM12', name: 'petite_et_moyenne_section')]
     public function CM12(): Response
     {
         return $this->render('classe/classe.html.twig', [
@@ -104,7 +104,7 @@ class ClasseController extends AbstractController
         ]);
     }
 
-    #[Route('/CM2', name: 'petite_et_moyenne_section')]
+    #[Route('/classe/CM2', name: 'petite_et_moyenne_section')]
     public function CM2(): Response
     {
         return $this->render('classe/classe.html.twig', [

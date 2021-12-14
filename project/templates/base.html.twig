@@ -4,34 +4,36 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block style %}{% endblock %}        
-        <link rel="stylesheet" href="{{ 'css/style.css' }}"/>
+        <title>La Présentation | {% block title %}Welcome!{% endblock %}</title>
+        {% block style %}
+            <link rel="stylesheet" href="{{ 'css/style.css' }}"/>
+        {% endblock %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     </head>
 
-        <body background="img/EntreEcoleCP/Esca.jpeg">
+    {% block background %}
+    <body>
 
-            {% block background %}
-                <div class="nobackground">
-            {% endblock %}
+            <div class="nobackground">
+    {% endblock %}
 
-            {% block header %}
-                {% include "/Header.html.php" %}
-            {% endblock %}
+                {% block header %}
+                    {% include "/Header.html.php" %}
+                {% endblock %}
 
-            {% include "/perm_content.html.php" %}
+                {% include "/perm_content.html.php" %}
 
-            {% block body %}{% endblock %}
+                {% block body %}{% endblock %}
 
-            {% block footer %}
-                {% include "/Footer.html.php" %}
-            {% endblock %}
+                {% block footer %}
+                    {% include "/Footer.html.php" %}
+                {% endblock %}
 
-            {% block javascripts %}{% endblock %}
+                {% block javascripts %}{% endblock %}
 
-                </div>
-        </body>
+            </div>
+    </body>
 
 </html>
