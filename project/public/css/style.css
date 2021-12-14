@@ -245,11 +245,9 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 40%;
-  position: relative;
-  height: 400px;
+    position: relative;
+    height: 400px;
+    text-align: center;
 }
 
 /* Next & previous buttons */
@@ -257,7 +255,7 @@ img {vertical-align: middle;}
   cursor: pointer;
   position: absolute;
   top: 50%;
-  left: -35%;
+  left: 10%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -272,7 +270,7 @@ img {vertical-align: middle;}
     cursor: pointer;
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 90%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -309,11 +307,11 @@ img {vertical-align: middle;}
 }
 
 #image_accueil{
-    width: 50%;
+    height: 400px;
 }
 #image_presentation{
-    width: 50%;
+    height: 400px;
 }
 #image_event{
-    width: 30%;
+    height: 400px;
 }
