@@ -35,7 +35,7 @@ class User
     /**
      * @ORM\OneToOne(targetEntity=Utilisateur::class, cascade={"persist", "remove"})
      */
-    private $idUtilisateur;
+    private $utilisateur;
 
     public function getId(): ?int
     {
@@ -78,14 +78,14 @@ class User
         return $this;
     }
 
-    public function getIdUtilisateur(): ?Utilisateur
+    public function getUtilisateur(): ?Utilisateur
     {
-        return $this->idUtilisateur;
+        return $this->utilisateur;
     }
 
-    public function setIdUtilisateur(?Utilisateur $idUtilisateur): self
+    public function setUtilisateur(?Utilisateur $utilisateur): self
     {
-        $this->idUtilisateur = $idUtilisateur;
+        $this->utilisateur = $utilisateur;
 
         return $this;
     }

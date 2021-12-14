@@ -27,28 +27,28 @@ class Classe
     /**
      * @ORM\OneToOne(targetEntity=Photo::class, cascade={"persist", "remove"})
      */
-    private $idPhoto;
+    private $photo;
 
     /**
-     * @ORM\OneToMany(targetEntity=Utilisateur::class, mappedBy="idClasse")
+     * @ORM\OneToMany(targetEntity=Utilisateur::class, mappedBy="classe")
      */
-    private $idProfs;
+    private $profs;
 
     /**
-     * @ORM\OneToMany(targetEntity=News::class, mappedBy="idClasse")
+     * @ORM\OneToMany(targetEntity=News::class, mappedBy="classe")
      */
-    private $idNews;
+    private $news;
 
     /**
-     * @ORM\OneToMany(targetEntity=Photo::class, mappedBy="idClasse")
+     * @ORM\OneToMany(targetEntity=Photo::class, mappedBy="classe")
      */
-    private $idPhotos;
+    private $photos;
 
     public function __construct()
     {
-        $this->idProfs = new ArrayCollection();
-        $this->idNews = new ArrayCollection();
-        $this->idPhotos = new ArrayCollection();
+        $this->profs = new ArrayCollection();
+        $this->news = new ArrayCollection();
+        $this->photos = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -68,14 +68,14 @@ class Classe
         return $this;
     }
 
-    public function getIdPhoto(): ?Photo
+    public function getPhoto(): ?Photo
     {
-        return $this->idPhoto;
+        return $this->Photo;
     }
 
-    public function setIdPhoto(?Photo $idPhoto): self
+    public function setPhoto(?Photo $Photo): self
     {
-        $this->idPhoto = $idPhoto;
+        $this->Photo = $Photo;
 
         return $this;
     }
@@ -83,27 +83,27 @@ class Classe
     /**
      * @return Collection|Utilisateur[]
      */
-    public function getIdProfs(): Collection
+    public function getProfs(): Collection
     {
-        return $this->idProfs;
+        return $this->profs;
     }
 
-    public function addIdProf(Utilisateur $idProf): self
+    public function addProf(Utilisateur $prof): self
     {
-        if (!$this->idProfs->contains($idProf)) {
-            $this->idProfs[] = $idProf;
-            $idProf->setIdClasse($this);
+        if (!$this->profs->contains($prof)) {
+            $this->profs[] = $prof;
+            $prof->setClasse($this);
         }
 
         return $this;
     }
 
-    public function removeIdProf(Utilisateur $idProf): self
+    public function removeProf(Utilisateur $prof): self
     {
-        if ($this->idProfs->removeElement($idProf)) {
+        if ($this->profs->removeElement($prof)) {
             // set the owning side to null (unless already changed)
-            if ($idProf->getIdClasse() === $this) {
-                $idProf->setIdClasse(null);
+            if ($prof->getClasse() === $this) {
+                $prof->setClasse(null);
             }
         }
 
@@ -113,27 +113,27 @@ class Classe
     /**
      * @return Collection|News[]
      */
-    public function getIdNews(): Collection
+    public function getNews(): Collection
     {
-        return $this->idNews;
+        return $this->news;
     }
 
-    public function addIdNews(News $idNews): self
+    public function addNews(News $news): self
     {
-        if (!$this->idNews->contains($idNews)) {
-            $this->idNews[] = $idNews;
-            $idNews->setIdClasse($this);
+        if (!$this->news->contains($news)) {
+            $this->news[] = $news;
+            $news->setClasse($this);
         }
 
         return $this;
     }
 
-    public function removeIdNews(News $idNews): self
+    public function removeNews(News $news): self
     {
-        if ($this->idNews->removeElement($idNews)) {
+        if ($this->news->removeElement($news)) {
             // set the owning side to null (unless already changed)
-            if ($idNews->getIdClasse() === $this) {
-                $idNews->setIdClasse(null);
+            if ($news->getClasse() === $this) {
+                $news->setClasse(null);
             }
         }
 
@@ -143,27 +143,27 @@ class Classe
     /**
      * @return Collection|Photo[]
      */
-    public function getIdPhotos(): Collection
+    public function getPhotos(): Collection
     {
-        return $this->idPhotos;
+        return $this->photos;
     }
 
-    public function addIdPhoto(Photo $idPhoto): self
+    public function addPhoto(Photo $photo): self
     {
-        if (!$this->idPhotos->contains($idPhoto)) {
-            $this->idPhotos[] = $idPhoto;
-            $idPhoto->setIdClasse($this);
+        if (!$this->photos->contains($photo)) {
+            $this->photos[] = $photo;
+            $photo->setClasse($this);
         }
 
         return $this;
     }
 
-    public function removeIdPhoto(Photo $idPhoto): self
+    public function removePhoto(Photo $photo): self
     {
-        if ($this->idPhotos->removeElement($idPhoto)) {
+        if ($this->photos->removeElement($photo)) {
             // set the owning side to null (unless already changed)
-            if ($idPhoto->getIdClasse() === $this) {
-                $idPhoto->setIdClasse(null);
+            if ($photo->getClasse() === $this) {
+                $photo->setClasse(null);
             }
         }
 

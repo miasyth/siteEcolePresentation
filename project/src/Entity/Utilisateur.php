@@ -23,9 +23,9 @@ class Utilisateur
     private $name;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="idProfs")
+     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="profs")
      */
-    private $idClasse;
+    private $classe;
 
     public function getId(): ?int
     {
@@ -44,14 +44,14 @@ class Utilisateur
         return $this;
     }
 
-    public function getIdClasse(): ?Classe
+    public function getClasse(): ?Classe
     {
-        return $this->idClasse;
+        return $this->classe;
     }
 
-    public function setIdClasse(?Classe $idClasse): self
+    public function setClasse(?Classe $classe): self
     {
-        $this->idClasse = $idClasse;
+        $this->classe = $classe;
 
         return $this;
     }

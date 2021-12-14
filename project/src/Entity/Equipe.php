@@ -25,7 +25,7 @@ class Equipe
     /**
      * @ORM\OneToOne(targetEntity=Photo::class, cascade={"persist", "remove"})
      */
-    private $idPhoto;
+    private $photo;
 
     public function getId(): ?int
     {
@@ -44,14 +44,14 @@ class Equipe
         return $this;
     }
 
-    public function getIdPhoto(): ?Photo
+    public function getPhoto(): ?Photo
     {
-        return $this->idPhoto;
+        return $this->photo;
     }
 
-    public function setIdPhoto(?Photo $idPhoto): self
+    public function setPhoto(?Photo $photo): self
     {
-        $this->idPhoto = $idPhoto;
+        $this->photo = $photo;
 
         return $this;
     }

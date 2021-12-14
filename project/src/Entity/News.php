@@ -40,24 +40,24 @@ class News
     private $ecole;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="idNews")
+     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="news")
      */
-    private $idClasse;
+    private $classe;
 
     /**
-     * @ORM\OneToMany(targetEntity=Photo::class, mappedBy="idNews")
+     * @ORM\OneToMany(targetEntity=Photo::class, mappedBy="news")
      */
-    private $idPhotos;
+    private $photos;
 
     /**
-     * @ORM\OneToMany(targetEntity=Video::class, mappedBy="idNews")
+     * @ORM\OneToMany(targetEntity=Video::class, mappedBy="news")
      */
-    private $idVideos;
+    private $videos;
 
     public function __construct()
     {
-        $this->idPhotos = new ArrayCollection();
-        $this->idVideos = new ArrayCollection();
+        $this->photos = new ArrayCollection();
+        $this->videos = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -113,14 +113,14 @@ class News
         return $this;
     }
 
-    public function getIdClasse(): ?Classe
+    public function getClasse(): ?Classe
     {
-        return $this->idClasse;
+        return $this->classe;
     }
 
-    public function setIdClasse(?Classe $idClasse): self
+    public function setClasse(?Classe $classe): self
     {
-        $this->idClasse = $idClasse;
+        $this->classe = $classe;
 
         return $this;
     }
@@ -128,27 +128,27 @@ class News
     /**
      * @return Collection|Photo[]
      */
-    public function getIdPhotos(): Collection
+    public function getPhotos(): Collection
     {
-        return $this->idPhotos;
+        return $this->photos;
     }
 
-    public function addIdPhoto(Photo $idPhoto): self
+    public function addPhoto(Photo $photo): self
     {
-        if (!$this->idPhotos->contains($idPhoto)) {
-            $this->idPhotos[] = $idPhoto;
-            $idPhoto->setIdNews($this);
+        if (!$this->photos->contains($photo)) {
+            $this->photos[] = $photo;
+            $photo->setNews($this);
         }
 
         return $this;
     }
 
-    public function removeIdPhoto(Photo $idPhoto): self
+    public function removePhoto(Photo $photo): self
     {
-        if ($this->idPhotos->removeElement($idPhoto)) {
+        if ($this->photos->removeElement($photo)) {
             // set the owning side to null (unless already changed)
-            if ($idPhoto->getIdNews() === $this) {
-                $idPhoto->setIdNews(null);
+            if ($photo->getNews() === $this) {
+                $photo->setNews(null);
             }
         }
 
@@ -158,27 +158,27 @@ class News
     /**
      * @return Collection|Video[]
      */
-    public function getIdVideos(): Collection
+    public function getVideos(): Collection
     {
-        return $this->idVideos;
+        return $this->videos;
     }
 
-    public function addIdVideo(Video $idVideo): self
+    public function addVideo(Video $video): self
     {
-        if (!$this->idVideos->contains($idVideo)) {
-            $this->idVideos[] = $idVideo;
-            $idVideo->setIdNews($this);
+        if (!$this->videos->contains($video)) {
+            $this->videos[] = $video;
+            $video->setNews($this);
         }
 
         return $this;
     }
 
-    public function removeIdVideo(Video $idVideo): self
+    public function removeVideo(Video $video): self
     {
-        if ($this->idVideos->removeElement($idVideo)) {
+        if ($this->videos->removeElement($video)) {
             // set the owning side to null (unless already changed)
-            if ($idVideo->getIdNews() === $this) {
-                $idVideo->setIdNews(null);
+            if ($video->getNews() === $this) {
+                $video->setNews(null);
             }
         }
 

@@ -33,14 +33,14 @@ class Photo
     private $url;
 
     /**
-     * @ORM\ManyToOne(targetEntity=News::class, inversedBy="idPhotos")
+     * @ORM\ManyToOne(targetEntity=News::class, inversedBy="photos")
      */
-    private $idNews;
+    private $news;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="idPhotos")
+     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="photos")
      */
-    private $idClasse;
+    private $classe;
 
     public function getId(): ?int
     {
@@ -83,26 +83,26 @@ class Photo
         return $this;
     }
 
-    public function getIdNews(): ?News
+    public function getNews(): ?News
     {
-        return $this->idNews;
+        return $this->news;
     }
 
-    public function setIdNews(?News $idNews): self
+    public function setNews(?News $news): self
     {
-        $this->idNews = $idNews;
+        $this->news = $news;
 
         return $this;
     }
 
-    public function getIdClasse(): ?Classe
+    public function getClasse(): ?Classe
     {
-        return $this->idClasse;
+        return $this->classe;
     }
 
-    public function setIdClasse(?Classe $idClasse): self
+    public function setClasse(?Classe $classe): self
     {
-        $this->idClasse = $idClasse;
+        $this->classe = $classe;
 
         return $this;
     }

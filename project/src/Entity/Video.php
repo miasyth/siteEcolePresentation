@@ -33,9 +33,9 @@ class Video
     private $url;
 
     /**
-     * @ORM\ManyToOne(targetEntity=News::class, inversedBy="idVideos")
+     * @ORM\ManyToOne(targetEntity=News::class, inversedBy="videos")
      */
-    private $idNews;
+    private $news;
 
     public function getId(): ?int
     {
@@ -78,14 +78,14 @@ class Video
         return $this;
     }
 
-    public function getIdNews(): ?News
+    public function getNews(): ?News
     {
-        return $this->idNews;
+        return $this->news;
     }
 
-    public function setIdNews(?News $idNews): self
+    public function setNews(?News $news): self
     {
-        $this->idNews = $idNews;
+        $this->news = $news;
 
         return $this;
     }
