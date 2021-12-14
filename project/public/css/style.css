@@ -184,6 +184,7 @@ textarea {
     flex-direction: column;
     margin-bottom: 30px;
 }
+
 /*____________________________________________________________*/
 
 /*   Containers   */
@@ -199,19 +200,24 @@ textarea {
     width: 30%;
 }
 
-.equipePeda { /* taille image equipe pedagogique */
-    width: 20%;
-}
+/*____________________________________________________________*/
 
-a.classe p{
+/*   Classes   */
+
+a.classe div{
     padding-top: 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-size: 20px;
     text-align: center;
     color: black ;
 }
 
 a.classe *{
-    width: 425px;
+    width: 400px;
+}
+
+a.classe img{
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -225,9 +231,19 @@ a.classe *{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 10vh;
 }
 
 /*____________________________________________________________*/
+
+/*   Equipe pedagogique   */
+
+.equipePeda { /* taille image equipe pedagogique */
+    width: 20%;
+}
+
+/*____________________________________________________________*/
+
 
 /*   Google maps   */
 
