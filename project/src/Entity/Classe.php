@@ -70,12 +70,12 @@ class Classe
 
     public function getPhoto(): ?Photo
     {
-        return $this->Photo;
+        return $this->photo;
     }
 
-    public function setPhoto(?Photo $Photo): self
+    public function setPhoto(?Photo $photo): self
     {
-        $this->Photo = $Photo;
+        $this->photo = $photo;
 
         return $this;
     }
