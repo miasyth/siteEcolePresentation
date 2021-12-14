@@ -7,6 +7,7 @@
         <title>La Présentation | {% block title %}Welcome!{% endblock %}</title>
         {% block style %}
             <link rel="stylesheet" href="{{ 'css/style.css' }}"/>
+        {# CSS goes here #}
         {% endblock %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,21 +18,35 @@
     <body>
 
             <div class="nobackground">
+
+    {# to enable background, add this to a template:
+        <body background="img/EntreEcoleCP/Esca.jpeg">
+        <div class="background">
+    #}
     {% endblock %}
 
                 {% block header %}
                     {% include "/Header.html.php" %}
+                {# to use the admin header, add this to a template:
+                    {% include "/HeaderAdmin.html.php" %}
+                #}
                 {% endblock %}
 
                 {% include "/perm_content.html.php" %}
 
-                {% block body %}{% endblock %}
+                {% block body %}
+                    {# main content goes here in templates #}
+                {% endblock %}
 
                 {% block footer %}
                     {% include "/Footer.html.php" %}
                 {% endblock %}
 
-                {% block javascripts %}{% endblock %}
+                {% block javascripts %}
+                {# to add a script, add this to a template:
+                    <script type="text/javascript" src="../js/FILENAME.js"></script>
+                #}
+                {% endblock %}
 
             </div>
     </body>
