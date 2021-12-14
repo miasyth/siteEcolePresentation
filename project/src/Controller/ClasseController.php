@@ -8,14 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ClasseController extends AbstractController
 {
-    #[Route('/classe', name: 'classe')]
-    public function index(): Response
-    {
-        return $this->render('classe/classe.html.twig', [
-            'controller_name' => 'ClasseController',
-        ]);
-    }
-
     #[Route('/classe/TPS', name: 'tres_petite_section')]
     public function TPS(): Response
     {
