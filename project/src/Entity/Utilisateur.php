@@ -22,6 +22,11 @@ class Utilisateur
      */
     private $name;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="idProfs")
+     */
+    private $idClasse;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +40,18 @@ class Utilisateur
     public function setName(string $name): self
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getIdClasse(): ?Classe
+    {
+        return $this->idClasse;
+    }
+
+    public function setIdClasse(?Classe $idClasse): self
+    {
+        $this->idClasse = $idClasse;
 
         return $this;
     }

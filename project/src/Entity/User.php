@@ -32,6 +32,11 @@ class User
      */
     private $role = ["Admin"=>false, "Prof"=>false];
 
+    /**
+     * @ORM\OneToOne(targetEntity=Utilisateur::class, cascade={"persist", "remove"})
+     */
+    private $idUtilisateur;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +74,18 @@ class User
     public function setRole(array $role): self
     {
         $this->role = $role;
+
+        return $this;
+    }
+
+    public function getIdUtilisateur(): ?Utilisateur
+    {
+        return $this->idUtilisateur;
+    }
+
+    public function setIdUtilisateur(?Utilisateur $idUtilisateur): self
+    {
+        $this->idUtilisateur = $idUtilisateur;
 
         return $this;
     }

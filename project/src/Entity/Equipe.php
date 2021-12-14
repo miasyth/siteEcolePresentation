@@ -22,6 +22,11 @@ class Equipe
      */
     private $description;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Photo::class, cascade={"persist", "remove"})
+     */
+    private $idPhoto;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +40,18 @@ class Equipe
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getIdPhoto(): ?Photo
+    {
+        return $this->idPhoto;
+    }
+
+    public function setIdPhoto(?Photo $idPhoto): self
+    {
+        $this->idPhoto = $idPhoto;
 
         return $this;
     }
