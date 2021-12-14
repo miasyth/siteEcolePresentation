@@ -7,11 +7,16 @@
 {% endblock %}
 #}
 
-
 {# if you want to enable background:
 {% block background %}
 <body background="img/EntreEcoleCP/Esca.jpeg">
     <div class="background">
+{% endblock %}
+#}
+
+{# if you want to use the admin header:
+{% block header %}
+    {% include "/HeaderAdmin.html.php" %}
 {% endblock %}
 #}
 
@@ -30,7 +35,15 @@
 
 {% endblock %}
 
+
+{# if you want to use a different footer:
+{% block footer %}
+    {% include "/FooterAUTRE.html.php" %}
+{% endblock %}
+#}
+
 {# if you use specific JS:
 {% block javascripts %}
+    <script type="text/javascript" src="js/FILENAME.js"></script>
 {% endblock %}
 #}
