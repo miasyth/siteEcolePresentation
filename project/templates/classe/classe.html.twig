@@ -8,8 +8,21 @@
 
 
 {% block body %}
-    Coucou, voici le template de classe
+
+    <div class="container">
+        <div>
+            <h4>{% block nomClasse %}{% endblock %}</h4>
+
+            <hr width="20%" color= "#82b442" align="left">
+
+            {% block carrousel %}{% endblock %}
+            
+        </div>
+    </div>
+
 {% endblock %}
 
 
-{% block javascripts %}{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="js/carrousel.js"></script>
+{% endblock %}
