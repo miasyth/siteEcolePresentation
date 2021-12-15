@@ -8,89 +8,40 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ClasseController extends AbstractController
 {
-    #[Route('/classe/{classe}', name: 'details classe')]
-    public function index(string $classe): Response
+    #[Route('/classe/{class}', name: 'details classe')]
+    public function index(string $class): Response
     {
-        if($classe=="TPS"){
-            return $this->render('classe/TPS.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-        
-        if($classe=="PS-MS"){
-            return $this->render('classe/PS-MS.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="MS"){
-            return $this->render('classe/MS.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="GS"){
-            return $this->render('classe/GS.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="CP_1"){
-            return $this->render('classe/CP_1.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
+        if($class=="TPS"){
+            $className="classe de tres petite section";
+        } else if ($class=="PS-MS"){
+            $className="classe de petite et moyenne section";
+        } else if ($class=="MS"){
+            $className="classe de moyenne section";
+        } else if ($class=="GS"){
+            $className="classe de grande section";            
+        } else if ($class=="CP_1"){
+            $className="classe de CP 1";
+        } else if ($class=="CP_2"){
+            $className="classe de CP 2";
+        } else if ($class=="CE1"){
+            $className="classe de CE1";
+        } else if ($class=="CE12"){
+            $className="classe de CE1 et CE2";
+        } else if ($class=="CE2"){
+            $className="classe de CE2";
+        } else if ($class=="CM1"){
+            $className="classe de CM1";
+        } else if ($class=="CM12"){
+            $className="classe de CM1 et CM2";
+        } else if ($class=="CM2"){
+            $className="classe de CM2";
+        } else {
+            return $this->redirectToRoute('classes');
         }
 
-
-        if($classe=="CP_2"){
-            return $this->render('classe/CP_2.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="CE1"){
-            return $this->render('classe/CE1.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="CE12"){
-            return $this->render('classe/CE12.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="CE2"){
-            return $this->render('classe/CE2.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="CM1"){
-            return $this->render('classe/CM1.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="CM12"){
-            return $this->render('classe/CM12.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
-
-
-        if($classe=="CM2"){
-            return $this->render('classe/CM2.html.twig', [
-                'controller_name' => 'ClasseController',
-            ]);
-        }
+        return $this->render('classe/classe.html.twig', [
+            'class' => $class,
+            'className' => $className,
+        ]);
     }
 }

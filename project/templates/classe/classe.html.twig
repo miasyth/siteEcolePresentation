@@ -1,11 +1,10 @@
 {% extends 'base.html.twig' %}
     
-{% block title %}Template de Classe{% endblock %}
+{% block title %}{{class}}{% endblock %}
 
 
 {% block favicon %}
 <link rel="icon" type="image/png" href="../favicon.png">
-{# if you need to change the address #}
 {% endblock %}
 
 {% block style %}
@@ -17,7 +16,7 @@
 
     <div class="container">
         <div>
-            <h4>{% block nomClasse %}{% endblock %}</h4>
+            <h4>{% block nomClasse %}{{className}}{% endblock %}</h4>
 
             <hr width="20%" color= "#82b442" align="left">
 
