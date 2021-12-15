@@ -53,7 +53,27 @@ ul.horizontal {
 
 /*____________________________________________________________*/
 
-/*    SOCIAL BAR   */
+/*    BODY    */
+
+body{
+    margin: unset;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.background{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nobackground {
+    background: white;
+}
+
+/*____________________________________________________________*/
+
+/*    SOCIAL BAR / Perm_content   */
 
 #gmaps {
     border: 0;
@@ -97,30 +117,7 @@ ul.horizontal {
 
 /*____________________________________________________________*/
 
-/*    BODY    */
-
-.background{
-    background: rgba(255, 255, 255, 0.5);
-}
-
-.nobackground {
-    background: white;
-}
-
-body{
-    margin: unset;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-size: cover;
-}
-
-main {
-    background-color: #ffffff;
-    padding-top: 10px;
-    text-align: center;
-    min-height: 70%;
-}
+/*   Accueil   */
 
 .contact {
     background-color: #C4C4C4;
@@ -153,7 +150,7 @@ main {
     border-radius: 10px;
 }
 
-textarea {
+#textarea {
     width: 90%;
     height: 100px;
     border-radius: 10px;
@@ -175,6 +172,10 @@ textarea {
     text-align: center;
 }
 
+#gmaps {
+    border: 0;
+}
+
 /*____________________________________________________________*/
 
 /*   Containers   */
@@ -184,124 +185,6 @@ textarea {
     margin-left: 15%;
     margin-right: 15%;
     text-align: justify;
-}
-
-/*____________________________________________________________*/
-
-/*   Classes   */
-
-a.classe div{
-    padding-top: 25px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 20px;
-    text-align: center;
-    color: black ;
-}
-
-a.classe *{
-    width: 400px;
-}
-
-a.classe img{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.titre {
-    text-align: center;
-    color: #2F2C2C;
-}
-
-.listeClasse {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 10vh;
-}
-
-/*____________________________________________________________*/
-
-/*   Equipe pedagogique   */
-
-.equipePeda { /* taille image equipe pedagogique */
-    width: 20%;
-}
-
-/*____________________________________________________________*/
-
-/*   Evenements   */
-
-.event_futur {
-    display: flex;
-    flex-direction: column;
-}
-.event_passer {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-/*____________________________________________________________*/
-
-/* Mentions légales */
-
-.mentions-container {
-    margin: 1em auto; 
-    max-width: 800px; 
-    width: 95%; 
-    font: 18px/1.5 sans-serif;
-} 
-
-.mentions-container code {
-    background: #F5F5F5; 
-    padding: 2px 6px; 
-}
-
-/*____________________________________________________________*/
-
-
-/*   Google maps   */
-
-#gmaps {
-    border: 0;
-}
-
-/*____________________________________________________________*/
-
-/*   FOOTER   */
-
-footer {
-    background-color: #2F2C2C;
-    font-size: 20px;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    margin-top: auto;
-    min-height: 15%;
-}
-
-.footer_div {
-    display: flex;
-    flex-grow: 1; 
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-footer div {
-    padding-left: 3%;
-}
-
-.mentions {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 5%;
-    flex-grow: 2;
-}
-
-footer a {
-    text-decoration: unset;
-    color: unset;
 }
 
 /*____________________________________________________________*/
@@ -415,6 +298,120 @@ footer a {
 .active,
 .demo:hover {
     opacity: 1;
+}
+
+/*____________________________________________________________*/
+
+/*   Classes   */
+
+a.classe div{
+    padding-top: 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 20px;
+    text-align: center;
+    color: black ;
+}
+
+a.classe *{
+    width: 400px;
+}
+
+a.classe img{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.titre {
+    text-align: center;
+    color: #2F2C2C;
+}
+
+.listeClasse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10vh;
+}
+
+footer a {
+    text-decoration: unset;
+    color: unset;
+}
+
+/*____________________________________________________________*/
+
+/*   Equipe pedagogique   */
+
+.equipePeda { /* taille image equipe pedagogique */
+    width: 20%;
+}
+
+/*____________________________________________________________*/
+
+/*   Evenements   */
+
+.event_futur {
+    display: flex;
+    flex-direction: column;
+}
+.event_passer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+/*____________________________________________________________*/
+
+/* Mentions légales */
+
+.mentions-container {
+    margin: 1em auto; 
+    max-width: 800px; 
+    width: 95%; 
+    font: 18px/1.5 sans-serif;
+} 
+
+.mentions-container code {
+    background: #F5F5F5; 
+    padding: 2px 6px; 
+}
+
+/*____________________________________________________________*/
+
+/*   FOOTER   */
+
+footer {
+    background-color: #2F2C2C;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    min-height: 15%;
+}
+
+.footer_div {
+    display: flex;
+    flex-grow: 1; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer div {
+    padding-left: 3%;
+}
+
+.mentions {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 5%;
+    flex-grow: 2;
+}
+
+footer a {
+    text-decoration: unset;
+    color: unset;
 }
 
 /*____________________________________________________________*/
