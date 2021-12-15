@@ -3,7 +3,7 @@
     <ul class="horizontal">
 
         <li class="accueil">
-            <a href="/"><img id="logoecole" src="\img\LogoEcole\logoecole.png"></a>
+            <a href="/accueil"><img id="logoecole" src="\img\LogoEcole\logoecole.png"></a>
         </li>
         <li class="presentation">
             <a href="/presentation">Présentation</a>
@@ -18,7 +18,7 @@
             <a href="/evenements">Evenements</a>
         </li>
         <li class="connexion">
-            <a href="/connexion">Connexion</a>
+            <a \href="/connexion">Connexion</a>
         </li>
 
     </ul>
