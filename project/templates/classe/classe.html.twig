@@ -20,26 +20,26 @@
 
             <hr width="20%" color= "#82b442" align="left">
 
-            {% block carrousel %}
-                <div class="slideshow-container" id="slider_accueil">
+            {# block carrousel #}
+                <div class="slideshow-container">
 
-                    <div class="mySlides fade">
-                        <img id="image_accueil" src=".\img\Facade\facade5.jpeg">
+                    <div class="mySlides">
+                        <img class="image_accueil" src="..\img\Facade\facade5.jpeg">
                     </div>
-                    
-                    <div class="mySlides fade">
-                        <img id="image_accueil" src=".\img\CoursRecre\cours.jpeg">
+
+                    <div class="mySlides">
+                        <img class="image_accueil" src="..\img\CoursRecre\cours.jpeg">
                     </div>
-                    
-                    <div class="mySlides fade">
-                        <img id="image_accueil" src=".\img\Biblio\Biblio1.jpeg">
+
+                    <div class="mySlides">
+                        <img class="image_accueil" src="..\img\Biblio\Biblio1.jpeg">
                     </div>
-                    
+
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    
+
                 </div>
-            {% endblock %}
+            {# endblock #}
 
         </div>
     </div>

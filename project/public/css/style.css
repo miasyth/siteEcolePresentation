@@ -306,101 +306,6 @@ footer a {
 
 /*____________________________________________________________*/
 
-/*   carrousel   */
-/*
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-
-/*.slideshow-container {
-    position: relative;
-    height: 400px;
-    text-align: center;
-}
-
-/* Next & previous buttons */
-/*.prev {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    border-radius: 3px 0 0 3px;
-}
-
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-  }
-
-/* Fading animation */
-/*.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-/*@media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-}
-
-#image_accueil{
-    height: 400px;
-}
-#image_presentation{
-    height: 400px;
-}
-#image_event{
-    height: 400px;
-}
-
-/*____________________________________________________________*/
-
 /*   carrousel  */
 
 #image_presentation {
@@ -457,6 +362,7 @@ img {vertical-align: middle;}
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Position the "next button" to the right */
