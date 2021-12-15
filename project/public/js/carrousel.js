@@ -1,14 +1,16 @@
 let slideIndex = 1;
 
-let carrousel = document.getElementsByClassName("slideshow-container");
+let carrousel = document.getElementById('slider1');
 
-let carrousel2 = document.getElementsByClassName("slideshow-container2");
+let carrousel2 = document.getElementById('slider2');
+
 
 showSlides(slideIndex);
 
 function plusSlides(n,idCarrousel) {
-    let CurrentCarrousel = document.getElementById(idCarrousel);
+    if(idCarrousel === carrousel){
         showSlides(slideIndex += n);
+    }
 }
 
 function currentSlide(n) {
