@@ -20,39 +20,38 @@
 
     {% block background %}
     <body>
-
-            <div class="nobackground">
+        <div class="nobackground">
 
     {# to enable background, add this to a template:
         <body background="img\Biblio\Biblio1.jpeg">
-        <div class="background">
+            <div class="background">
     #}
     {% endblock %}
 
-                {% block header %}
-                    {% include "/Header.html.twig" %}
-                {# to use the admin header, add this to a template:
-                    {% include "/HeaderAdmin.html.twig" %}
-                #}
-                {% endblock %}
+            {% block header %}
+                {% include "/Header.html.twig" %}
+            {# to use the admin header, add this to a template:
+                {% include "/HeaderAdmin.html.twig" %}
+            #}
+            {% endblock %}
 
-                {% include "/perm_content.html.twig" %}
+            {% include "/perm_content.html.twig" %}
 
-                {% block body %}
-                    {# main content goes here in templates #}
-                {% endblock %}
+            {% block body %}
+                {# main content goes here in templates #}
+            {% endblock %}
 
-                {% block footer %}
-                    {% include "/Footer.html.twig" %}
-                {% endblock %}
+            {% block footer %}
+                {% include "/Footer.html.twig" %}
+            {% endblock %}
 
-                {% block javascripts %}
-                {# to add a script, add this to a template:
-                    <script type="text/javascript" src="js/FILENAME.js"></script>
-                #}
-                {% endblock %}
+            {% block javascripts %}
+            {# to add a script, add this to a template:
+                <script type="text/javascript" src="js/FILENAME.js"></script>
+            #}
+            {% endblock %}
 
-            </div>
+        </div>
     </body>
 
 </html>
