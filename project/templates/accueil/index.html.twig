@@ -2,11 +2,6 @@
 
 {% block title %}Accueil{% endblock %}
 
-{% block background %}
-<body background="img\Biblio\Biblio1.jpeg">
-    <div class="background">
-{% endblock %}
-
 {% block body %}
 
 
@@ -50,7 +45,7 @@
     <div class="contact">
         <h1>Formulaire de contact</h1>
         <form action="">
-            <div class="input_form">
+            <div class="input_form" id="formulaire_contact">
                 <input id="Nom"   type="text" placeholder="Nom et Prénom" tabindex="1"/>
                 <input id="Email" type="email" placeholder="Email" tabindex="2"/>
                 <input id="Objet" type="text" placeholder="Objet" tabindex="3"/></br></br>
@@ -62,8 +57,4 @@
         </form>
     </div>
     
-{% endblock %}
-
-{% block javascripts %}
-    <script type="text/javascript" src="js/carrousel.js"></script>
 {% endblock %}
