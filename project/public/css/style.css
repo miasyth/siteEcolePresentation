@@ -2,6 +2,7 @@
 
 * {
     font-family: Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 /*____________________________________________________________*/
@@ -185,6 +186,7 @@ body{
     margin-left: 15%;
     margin-right: 15%;
     text-align: justify;
+    position: relative;
 }
 
 /*____________________________________________________________*/
@@ -207,32 +209,20 @@ body{
     height: 400px;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-    position: relative;
-}
-
 .slideshow-container .mySlides{
     text-align: center;
 }
 
-/* Hide the images by default */
-.mySlides {
+.mySlides { /* Hide the images by default */
     display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
+.cursor { /* Add a pointer when hovering over the thumbnail images */
     cursor: pointer;
 }
 
-/* Next & previous buttons */
 .prev,
-.next {
+.next { /* Next & previous buttons */
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -248,20 +238,17 @@ body{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Position the "next button" to the right */
-.next {
+.next { /* Position the "next button" to the right */
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
-.next:hover {
+.next:hover { /* On hover, slightly darkens the black background color */
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
+.numbertext { /* Number text (1/n) */
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -269,8 +256,7 @@ body{
     top: 0;
 }
 
-/* Container for image text */
-.caption-container {
+.caption-container { /* Container for image text */
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
@@ -283,15 +269,12 @@ body{
     clear: both;
 }
 
-/* Six columns side by side */
-.column {
+.column { /* Six columns side by side */
     float: left;
     width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
-
-.demo {
+.demo { /* Add a transparency effect for thumbnail images */
     opacity: 0.6;
 }
 
@@ -334,9 +317,9 @@ a.classe img{
     padding-bottom: 10vh;
 }
 
-footer a {
-    text-decoration: unset;
-    color: unset;
+a.retour {
+    text-decoration: none;
+    color: black;
 }
 
 /*____________________________________________________________*/
@@ -391,9 +374,9 @@ footer {
     min-height: 15%;
 }
 
-.footer_div {
+.footer {
     display: flex;
-    flex-grow: 1; 
+    flex-grow: 1;
     margin-top: 50px;
     margin-bottom: 50px;
 }

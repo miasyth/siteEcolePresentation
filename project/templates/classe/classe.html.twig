@@ -16,11 +16,12 @@
 
     <div class="container">
         <div>
-            <a href="/classes" class=""><- Retour</a>
             <br>
-            <h4>{% block nomClasse %}{{className}}{% endblock %}</h4> {# insert of class name (full desc) #}
+            <a href="/classes" class="retour"><- Retour</a>
+            <br>
+            <h4>{% block nomClasse %}Classe de {{className}}{% endblock %}</h4> {# insert of class name (full desc) #}
 
-            <hr width="20%" color= "#82b442" align="left">
+            <hr width="20%" color= "{{color}}" align="left">
 
             {# block carrousel #}
                 <div class="slideshow-container">
@@ -41,6 +42,15 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
                 </div>
+            {# endblock #}
+
+            <br>
+
+            {# block profs#}
+
+                <h4>Enseigné par:</h4>
+                <p>{{listeProfs}}</p>
+
             {# endblock #}
 
         </div>
