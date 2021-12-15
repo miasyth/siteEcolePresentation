@@ -401,7 +401,7 @@ img {vertical-align: middle;}
 
 /*____________________________________________________________*/
 
-/*   carrousel presentation  */
+/*   carrousel  */
 
 #image_presentation {
     width: 100%;
@@ -411,7 +411,11 @@ img {vertical-align: middle;}
     height: 400px;
 }
 
-#image_accueil{
+.image_accueil{
+    height: 400px;
+}
+
+.image_classe{
     height: 400px;
 }
 
