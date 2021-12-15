@@ -44,7 +44,7 @@ ul.horizontal {
 }
 
 .connexion a {
-    color: white;
+    color: white; /* switch to black once user control is functional */
 }
 
 #logoecole {

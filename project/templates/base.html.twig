@@ -30,20 +30,20 @@
     {% endblock %}
 
                 {% block header %}
-                    {% include "/Header.html.php" %}
+                    {% include "/Header.html.twig" %}
                 {# to use the admin header, add this to a template:
-                    {% include "/HeaderAdmin.html.php" %}
+                    {% include "/HeaderAdmin.html.twig" %}
                 #}
                 {% endblock %}
 
-                {% include "/perm_content.html.php" %}
+                {% include "/perm_content.html.twig" %}
 
                 {% block body %}
                     {# main content goes here in templates #}
                 {% endblock %}
 
                 {% block footer %}
-                    {% include "/Footer.html.php" %}
+                    {% include "/Footer.html.twig" %}
                 {% endblock %}
 
                 {% block javascripts %}
