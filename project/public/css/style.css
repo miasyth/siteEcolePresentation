@@ -407,7 +407,7 @@ img {vertical-align: middle;}
     position: relative;
   }
 
-  .slideshow-container {
+  .slideshow-container .mySlides{
     text-align: center;
 }
 
