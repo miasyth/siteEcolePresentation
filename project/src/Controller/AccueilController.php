@@ -16,7 +16,7 @@ class AccueilController extends AbstractController
         ]);
     }
 
-    #[Route('/', name: 'accueil')]
+    #[Route('/', name: 'accueilAuxiliary')]
     public function index2(): Response
     {
         return $this->render('/accueil/index.html.twig', [
