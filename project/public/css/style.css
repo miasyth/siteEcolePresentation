@@ -118,67 +118,6 @@ body{
 
 /*____________________________________________________________*/
 
-/*   Accueil   */
-
-.contact {
-    background-color: #C4C4C4;
-    padding-top: 10px;
-    text-align: center;
-    min-height: 70%;
-}
-
-.input_form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 5%;
-    padding-bottom: 20px;
-    column-gap: 10%;
-}
-
-#Nom{
-    width: 120px;
-    border-radius: 10px;
-}
-
-#Email{
-    width: 250px;
-    border-radius: 10px;
-}
-
-#Objet{
-    width: 250px;
-    border-radius: 10px;
-}
-
-#textarea {
-    width: 90%;
-    height: 100px;
-    border-radius: 10px;
-    resize: none;
-}
-
-.btn_form{
-    text-align: right;
-    padding-right: 65px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-#btn {
-    width: 100px;
-    height: 40px;
-    font-weight: bold;
-    border-radius: 10px;
-    text-align: center;
-}
-
-#gmaps {
-    border: 0;
-}
-
-/*____________________________________________________________*/
-
 /*   Containers   */
 
 .container{
@@ -285,6 +224,66 @@ body{
 
 /*____________________________________________________________*/
 
+/*   Accueil   */
+
+.contact {
+    background-color: #C4C4C4;
+    text-align: center;
+    min-height: 70%;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-bottom: 20px;
+    column-gap: 10%;
+}
+
+#Nom{
+    width: 120px;
+    border-radius: 10px;
+}
+
+#Email{
+    width: 250px;
+    border-radius: 10px;
+}
+
+#Objet{
+    width: 250px;
+    border-radius: 10px;
+}
+
+#textarea {
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.btn_form{
+    text-align: right;
+    padding-right: 65px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#btn {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#gmaps {
+    border: 0;
+}
+
+/*____________________________________________________________*/
+
 /*   Classes   */
 
 a.classe div{
@@ -298,6 +297,10 @@ a.classe div{
 
 a.classe *{
     width: 400px;
+}
+
+a.classe {
+    text-decoration: none;
 }
 
 a.classe img{
@@ -317,6 +320,22 @@ a.classe img{
     padding-bottom: 10vh;
 }
 
+.maternelle {
+    color: #40a4bc;
+}
+
+.coursPreparatoire {
+    color: #82b442;
+}
+
+.coursElementaire {
+    color: #ea7d44;
+}
+
+.coursMoyen {
+    color: #b1434a;
+}
+
 a.retour {
     text-decoration: none;
     color: black;
@@ -326,8 +345,12 @@ a.retour {
 
 /*   Equipe pedagogique   */
 
-.equipePeda { /* taille image equipe pedagogique */
-    width: 20%;
+#equipePeda { /* taille image equipe pedagogique */
+    width: 100%;
+}
+
+.listEquipe{
+    margin-left: 20px;
 }
 
 /*____________________________________________________________*/
