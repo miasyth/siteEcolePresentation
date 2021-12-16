@@ -1,3 +1,13 @@
+const copy = _ => {
+    /* Get the text field */
+    let copyText = document.getElementById("mailAddress").innerText;
+
+    copyText=copyText.replace(/Copier/g, "");
+  
+     /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText);
+}
+
 const mail = _ => {
 
     const name=document.getElementById("Nom").value;
