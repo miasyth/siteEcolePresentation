@@ -25,12 +25,6 @@ ul.horizontal {
     box-shadow: 1px 1px 5px rgb(216, 216, 216);
 }
 
-@media (max-width: 80px) {
-    ul.horizontal {
-        flex-direction: column;
-    }
-}
-
 .presentation a {
     color: #40a4bc;
 }
@@ -57,6 +51,12 @@ ul.horizontal {
 
 #logoecole {
     width: 200px;
+}
+
+@media (max-width: 800px) {
+    ul.horizontal {
+        flex-direction: column;
+    }
 }
 
 /*____________________________________________________________*/
@@ -454,7 +454,6 @@ footer {
 
 .footer {
     display: flex;
-    flex-wrap: wrap;
     flex-grow: 1;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -474,6 +473,18 @@ footer div {
 footer a {
     text-decoration: unset;
     color: unset;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentions {
+        flex-direction: row;
+        margin-right: 0px;
+    }
 }
 
 /*____________________________________________________________*/
