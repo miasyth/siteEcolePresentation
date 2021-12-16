@@ -14,14 +14,21 @@ header {
 }
 
 ul.horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     box-shadow: 1px 1px 5px rgb(216, 216, 216);
+}
+
+@media (max-width: 80px) {
+    ul.horizontal {
+        flex-direction: column;
+    }
 }
 
 .presentation a {
@@ -226,32 +233,42 @@ body{
 
 /*   Accueil   */
 
-.contact {
-    background-color: #C4C4C4;
+.maps {
     text-align: center;
-    min-height: 70%;
 }
 
-.input_form {
+#gmaps {
+    border: 0;
+}
+
+.coordonnees {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 5%;
+    flex-wrap: wrap;
+}
+
+.coordonnees i {
+    color: red;
+}
+
+.contact {
+    background-color: #C4C4C4;
+    text-align: center;
+}
+
+.input_form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding-bottom: 20px;
-    column-gap: 10%;
 }
 
-#Nom{
-    width: 120px;
-    border-radius: 10px;
-}
-
-#Email{
-    width: 250px;
-    border-radius: 10px;
-}
-
-#Objet{
+#Nom,
+#Email,
+#Objet {
+    height: 40px;
     width: 250px;
     border-radius: 10px;
 }
@@ -270,16 +287,12 @@ body{
     padding-bottom: 20px;
 }
 
-#btn {
+#btn_contact {
     width: 100px;
     height: 40px;
     font-weight: bold;
     border-radius: 10px;
     text-align: center;
-}
-
-#gmaps {
-    border: 0;
 }
 
 /*____________________________________________________________*/
@@ -441,6 +454,7 @@ footer {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     margin-top: 50px;
     margin-bottom: 50px;
