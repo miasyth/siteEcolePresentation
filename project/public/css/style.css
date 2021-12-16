@@ -247,6 +247,32 @@ body{
 
 /*   Accueil   */
 
+.horaire {
+    text-align: center;
+    background-color: #C4C4C4;
+}
+
+.blockHoraires {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#listHoraires {
+    width: 25%;
+}
+
+#listHoraires div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    #listHoraires div {
+        flex-direction: column;
+    }
+}
+
 .maps {
     background-color: #C4C4C4;
     text-align: center;
@@ -281,36 +307,26 @@ hr {
     margin-block-start: 0em;
 }
 
-.input_form div {
+.listInput {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input_form {
+    width: 60%;
+}
+
+.input_form .fields {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
     padding-bottom: 20px;
 }
 
-.horaire {
-    text-align: center;
-    background-color: #C4C4C4;
-}
-
-.blockHoraires {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-#listHoraires {
-    width: 25%;
-}
-
-#listHoraires div {
-    display: flex;
-    justify-content: space-between;
-}
-
-@media (max-width: 1300px) {
-    #listHoraires div {
+@media (max-width: 1250px) {
+    .input_form .fields {
         flex-direction: column;
     }
 }
@@ -332,13 +348,12 @@ hr {
 
 .btn_form{
     text-align: right;
-    padding-right: 65px;
+    width: 95%;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 #btn_contact {
-    width: 100px;
     height: 40px;
     font-weight: bold;
     border-radius: 10px;

@@ -89,24 +89,28 @@
         <hr color="black">
         <br>
         <h2>Formulaire de contact</h2>
-        <form action="">
+        <div class="listInput">
             <div class="input_form" id="formulaire_contact">
-                <div>
+                <div class="fields">
                     <input id="Nom"   type="text" placeholder="Nom et Prénom" tabindex="1"/>
                     <input id="Email" type="email" placeholder="Email" tabindex="2"/>
                     <input id="Objet" type="text" placeholder="Objet" tabindex="3"/>
                 </div>
                 </br></br>
+
                 <textarea id="textarea" tabindex="4"></textarea></br>
                 <div class="btn_form">
-                    <input id="btn_contact" type="submit" tabindex="5" value="Envoyer"/></br>
+                    <button id="btn_contact" tabindex="5" onclick="mail()"/>Envoyer</button>
+                </div>
+                </br>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
     
 {% endblock %}
 
 {% block javascripts %}
+    <script type="text/javascript" src="js/accueil/mail.js"></script>
     <script type="text/javascript" src="js/carrousel.js"></script>
 {% endblock %}
