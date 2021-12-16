@@ -402,6 +402,8 @@ a.retour {
 
 /* Connexion  */
 
+/* Connexion  */
+
 #Form_connexion {
     text-align: center;
     display: flex;
@@ -417,9 +419,9 @@ a.retour {
     margin-bottom: 1%;
 }
 #btn_connexion {
-    margin-left: 35%;
-    margin-right: 35%;
     border-radius: 8px;
+    width: 90px;
+    align-self: center;
 }
 
 /*____________________________________________________________*/
