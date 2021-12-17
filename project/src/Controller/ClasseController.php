@@ -27,7 +27,6 @@ class ClasseController extends AbstractController
             $img[4]="TPSBulteau\TPS_5.jpg";
             $img[5]="TPSBulteau\TPS_6.jpg";
             $img[6]="TPSBulteau\TPS_7.jpg";
-            $img[7]="TPSBulteau\TPS_8.jpg";
             $listeProfs="Mme Bulteau";
 
         } else if ($class=="PS-MS"){
@@ -40,8 +39,6 @@ class ClasseController extends AbstractController
             $img[3]="PSMSCandelier\PSMS_4.jpg";
             $img[4]="PSMSCandelier\PSMS_5.jpg";
             $img[5]="PSMSCandelier\PSMS_6.jpg";
-            $img[6]="PSMSCandelier\PSMS_7.jpg";
-            $img[7]="PSMSCandelier\PSMS_8.jpg";
             $listeProfs="Mmes Candelier, Guffroy et Delphine";
 
         } else if ($class=="MS"){
