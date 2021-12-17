@@ -3,6 +3,7 @@
 * {
     font-family: Verdana, sans-serif;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 /*____________________________________________________________*/
@@ -92,6 +93,45 @@ body{
 .nobackground {
     background: white;
 }
+
+/*____________________________________________________________*/
+
+/*    Présentation   */
+
+.presentatition_ecole{
+    text-align: center;
+}
+
+.div_presentation{
+    text-align: center;
+}
+.div_presentation a{
+    color: black;
+    font-weight: bold;
+}
+.div_presentation hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.Volet_Pastoral label {
+    font-weight: bold;
+}
+
+.Reglement_interieur {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.Projet_éducatif{
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+
 
 /*____________________________________________________________*/
 
@@ -247,19 +287,25 @@ body{
 
 /*   Accueil   */
 
+
+
 .horaire {
     text-align: center;
+    padding-right: -10%;
+    padding-left: -10%;
+}
+.Titre_horaire{
     background-color: #C4C4C4;
 }
-
 .blockHoraires {
     display: flex;
     justify-content: space-around;
+    background: none;
     width: 100%;
 }
 
 #listHoraires {
-    width: 25%;
+    width: 50%;
 }
 
 #listHoraires div {
