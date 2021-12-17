@@ -18,7 +18,7 @@ class ClasseController extends AbstractController
 
         if($class=="TPS"){
 
-            $className="tres petite section";
+            $className="toute petite section";
             $color = $maternelle;
             $img[0]="TPSBulteau\TPS_1.jpg";
             $img[1]="TPSBulteau\TPS_2.jpg";
