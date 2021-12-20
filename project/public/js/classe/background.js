@@ -7,14 +7,14 @@ const winter = {jour:21,mois:12};
 
 if(date.jour>=spring.jour && date.mois==spring.mois || date.mois>spring.mois && date.mois<summer.mois || date.jour<summer.jour && date.mois==summer.mois){
     //printemps
-    document.body.style.backgroundImage = "url('img/Fond/Printemps.jpg')";
+    document.body.style.backgroundImage = "url('../img/Fond/Printemps.jpg')";
 } else if(date.jour>=summer.jour && date.mois==summer.mois || date.mois>summer.mois && date.mois<autumn.mois || date.jour<autumn.jour && date.mois==autumn.mois){
     //ete
-    document.body.style.backgroundImage = "url('img/Fond/Ete.jpg')";
+    document.body.style.backgroundImage = "url('../img/Fond/Ete.jpg')";
 } else if(date.jour>=autumn.jour && date.mois==autumn.mois || date.mois>autumn.mois && date.mois<winter.mois || date.jour<winter.jour && date.mois==winter.mois){
     //automne
-    document.body.style.backgroundImage = "url('img/Fond/Automne.jpg')";
+    document.body.style.backgroundImage = "url('../img/Fond/Automne.jpg')";
 } else {
     //hiver
-    document.body.style.backgroundImage = "url('img/Fond/Hiver.jpg')";
+    document.body.style.backgroundImage = "url('../img/Fond/Hiver.jpg')";
 }

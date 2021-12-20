@@ -18,15 +18,9 @@
 
     </head>
 
-    {% block background %}
+    
     <body>
-        <div class="nobackground">
-
-    {# to enable background, add this to a template:
-        <body background="img\Biblio\Biblio1.jpeg">
-            <div class="background">
-    #}
-    {% endblock %}
+        <div class="background">
 
             {% block header %}
                 {% include "/Header.html.twig" %}
@@ -49,6 +43,7 @@
             {# to add a script, add this to a template:
                 <script type="text/javascript" src="js/FILENAME.js"></script>
             #}
+    <script type="text/javascript" src="js/background/background.js"></script>
             {% endblock %}
 
         </div>

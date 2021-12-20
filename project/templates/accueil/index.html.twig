@@ -2,16 +2,7 @@
 
 {% block title %}Accueil{% endblock %}
 
-{% block background %}
-<body background="img\Biblio\Biblio1.jpeg">
-    <div class="background">
-{% endblock %}
-
 {% block body %}
-
-    <!-- <div class="img_presentation_accueil">
-        <img class="background_accueil" src=".\img\Facade\facade7.jpeg">
-    </div> -->
 
     <h1 class="titre">
         Enseignement catholique <br>
@@ -31,16 +22,17 @@
         <div class="mySlides">
             <img class="image_accueil" src=".\img\Biblio\Biblio1.jpeg" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
         </div>
+
     </div>
 
     <br>
 
     <div class="horaire">
         <div class="Titre_horaire">
-        <hr color="black">
-            <h2>Horaires de notre établissement</h2>
-        
-        <hr color="black">
+            <hr color="black">
+                <h2>Horaires de notre établissement</h2>
+            
+            <hr color="black">
         </div>
         <div class="blockHoraires">
             <div id="listHoraires">
@@ -114,5 +106,6 @@
 
 {% block javascripts %}
     <script type="text/javascript" src="js/accueil/accueil.js"></script>
-    <script type="text/javascript" src="js\carrousel\autoCarrousel.js"></script>
+    <script type="text/javascript" src="js/carrousel/autoCarrousel.js"></script>
+    <script type="text/javascript" src="js/background/background.js"></script>
 {% endblock %}

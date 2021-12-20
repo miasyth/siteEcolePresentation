@@ -2,15 +2,10 @@
 
 {% block title %}Presentation{% endblock %}
 
-{% block background %}
-<body background="img\Biblio\Biblio1.jpeg">
-    <div class="background">
-{% endblock %}
-
 {% block body  %}
 
-    <div class= "container">
-        <div class="presentation_ecole">
+    <div class="container">
+        <div>
             <h4>Présentation de l'établissement</h4>
 
             <hr width="20%" color= "#40a4bc">
@@ -30,32 +25,33 @@
         </p>
         <p>
 
-            <!-- Container for the image gallery -->
-            <div class="container">
+        <!-- Container for the image gallery -->
+        <div class="container">
 
-                <!-- Full-width images with number text -->
-                <div class="mySlides">
-                    <img src=".\img\CoursRecre\cours.jpeg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
-                </div>
-            
-                <div class="mySlides">
-                    <img src=".\img\Biblio\Biblio1.jpeg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
-                </div>
-            
-                <div class="mySlides">
-                    <img src=".\img\Garderie\garderieMarternelle.jpg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
-                </div>
-            
-                <div class="mySlides">
-                    <img src="..\img\Classes\CE1CE2Dartois\CE1CE2_1.jpg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
-                </div>
-            
-                <div class="mySlides">
-                    <img src=".\img\Facade\facade5.jpeg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
-                </div>
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <img src=".\img\CoursRecre\cours.jpeg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
+            </div>
+        
+            <div class="mySlides">
+                <img src=".\img\Biblio\Biblio1.jpeg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
+            </div>
+        
+            <div class="mySlides">
+                <img src=".\img\Garderie\garderieMarternelle.jpg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
+            </div>
+        
+            <div class="mySlides">
+                <img src="..\img\Classes\CE1CE2Dartois\CE1CE2_1.jpg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
+            </div>
+        
+            <div class="mySlides">
+                <img src=".\img\Facade\facade5.jpeg" id="image_presentation" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
+            </div>
+
         </div>
     </div>
-    <div class="background">
+    <div class="container">
         <br>
         <hr width="20%" color= "#40a4bc">
         <div class= "div_presentation">
@@ -95,5 +91,6 @@
 {% endblock %}
 
 {% block javascripts %}
-    <script type="text/javascript" src=js\carrousel\autoCarrousel.js></script>
+    <script type="text/javascript" src="js\carrousel\autoCarrousel.js"></script>
+    <script type="text/javascript" src="js/background/background.js"></script>
 {% endblock %}

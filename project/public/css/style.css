@@ -84,6 +84,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-size: cover;
+    background-position: absolute;
 }
 
 .background{
@@ -93,45 +94,6 @@ body{
 .nobackground {
     background: white;
 }
-
-/*____________________________________________________________*/
-
-/*    Présentation   */
-
-.presentatition_ecole{
-    text-align: center;
-}
-
-.div_presentation{
-    text-align: center;
-}
-.div_presentation a{
-    color: black;
-    font-weight: bold;
-}
-.div_presentation hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: black;
-}
-
-.Volet_Pastoral label {
-    font-weight: bold;
-}
-
-.Reglement_interieur {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-.Projet_éducatif{
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-
 
 /*____________________________________________________________*/
 
@@ -182,7 +144,8 @@ body{
 /*   Containers   */
 
 .container{
-    display: column;
+    display: flex;
+    flex-direction: column;
     margin-left: 15%;
     margin-right: 15%;
     text-align: justify;
@@ -221,48 +184,6 @@ body{
     cursor: pointer;
 }
 
-.prev,
-.next { /* Next & previous buttons */
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.next { /* Position the "next button" to the right */
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover { /* On hover, slightly darkens the black background color */
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numbertext { /* Number text (1/n) */
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.caption-container { /* Container for image text */
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-
 .row:after {
     content: "";
     display: table;
@@ -274,20 +195,9 @@ body{
     width: 16.66%;
 }
 
-.demo { /* Add a transparency effect for thumbnail images */
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
 /*____________________________________________________________*/
 
 /*   Accueil   */
-
-
 
 .horaire {
     text-align: center;
@@ -405,6 +315,45 @@ hr {
     border-radius: 10px;
     text-align: center;
 }
+
+/*____________________________________________________________*/
+
+/*    Présentation   */
+
+.presentatition_ecole{
+    text-align: center;
+}
+
+.div_presentation{
+    text-align: center;
+}
+.div_presentation a{
+    color: black;
+    font-weight: bold;
+}
+.div_presentation hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.Volet_Pastoral label {
+    font-weight: bold;
+}
+
+.Reglement_interieur {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.Projet_éducatif{
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+
 
 /*____________________________________________________________*/
 
