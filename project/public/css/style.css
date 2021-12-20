@@ -3,7 +3,6 @@
 * {
     font-family: Verdana, sans-serif;
     box-sizing: border-box;
-    font-size: 20px;
 }
 
 /*____________________________________________________________*/
@@ -93,45 +92,6 @@ body{
 .nobackground {
     background: white;
 }
-
-/*____________________________________________________________*/
-
-/*    Présentation   */
-
-.presentatition_ecole{
-    text-align: center;
-}
-
-.div_presentation{
-    text-align: center;
-}
-.div_presentation a{
-    color: black;
-    font-weight: bold;
-}
-.div_presentation hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: black;
-}
-
-.Volet_Pastoral label {
-    font-weight: bold;
-}
-
-.Reglement_interieur {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-.Projet_éducatif{
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-
 
 /*____________________________________________________________*/
 
@@ -287,38 +247,6 @@ body{
 
 /*   Accueil   */
 
-
-
-.horaire {
-    text-align: center;
-    padding-right: -10%;
-    padding-left: -10%;
-}
-.Titre_horaire{
-    background-color: #C4C4C4;
-}
-.blockHoraires {
-    display: flex;
-    justify-content: space-around;
-    background: none;
-    width: 100%;
-}
-
-#listHoraires {
-    width: 50%;
-}
-
-#listHoraires div {
-    display: flex;
-    justify-content: space-between;
-}
-
-@media (max-width: 1300px) {
-    #listHoraires div {
-        flex-direction: column;
-    }
-}
-
 .maps {
     background-color: #C4C4C4;
     text-align: center;
@@ -353,26 +281,36 @@ hr {
     margin-block-start: 0em;
 }
 
-.listInput {
-    display: flex;
-    justify-content: space-around;
-}
-
-.input_form {
-    width: 60%;
-}
-
-.input_form .fields {
+.input_form div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
     flex-wrap: wrap;
     padding-bottom: 20px;
 }
 
-@media (max-width: 1250px) {
-    .input_form .fields {
+.horaire {
+    text-align: center;
+    background-color: #C4C4C4;
+}
+
+.blockHoraires {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#listHoraires {
+    width: 25%;
+}
+
+#listHoraires div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    #listHoraires div {
         flex-direction: column;
     }
 }
@@ -394,12 +332,13 @@ hr {
 
 .btn_form{
     text-align: right;
-    width: 95%;
+    padding-right: 65px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 #btn_contact {
+    width: 100px;
     height: 40px;
     font-weight: bold;
     border-radius: 10px;
@@ -482,56 +421,34 @@ a.retour {
 
 /*   Evenements   */
 
-.event_futur {
-    display: flex;
-    flex-direction: column;
-}
-
-.event_passe {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.row_event {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.column_event { /* Create four equal columns that sits next to each other */
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 3px;
+* {
+    box-sizing: border-box;
   }
   
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+  /* Create two unequal columns that floats next to each other */
+  .column_event {
+    float: left;
+    padding: 10px;
   }
-
-.image_event {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
+  
+  .left {
+    width: 30%;
+  }
+  
+  .right {
+    width: 70%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 /* Container holding the image and the text */
 .contenu {
     position: relative;
-  }
-  
-  /* Bottom right text */
-  .text-block {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background-color: #2F2C2C;
-    color: white;
-    opacity: 0.95;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
 /*____________________________________________________________*/
