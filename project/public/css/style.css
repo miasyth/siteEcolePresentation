@@ -96,6 +96,45 @@ body{
 
 /*____________________________________________________________*/
 
+/*    Présentation   */
+
+.presentatition_ecole{
+    text-align: center;
+}
+
+.div_presentation{
+    text-align: center;
+}
+.div_presentation a{
+    color: black;
+    font-weight: bold;
+}
+.div_presentation hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.Volet_Pastoral label {
+    font-weight: bold;
+}
+
+.Reglement_interieur {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.Projet_éducatif{
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+
+
+/*____________________________________________________________*/
+
 /*    SOCIAL BAR / Perm_content   */
 
 #gmaps {
@@ -248,6 +287,8 @@ body{
 
 /*   Accueil   */
 
+
+
 .horaire {
     text-align: center;
     padding-right: -10%;
@@ -258,11 +299,8 @@ body{
 }
 .blockHoraires {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
+    background: none;
     width: 100%;
 }
 
@@ -275,12 +313,11 @@ body{
     justify-content: space-between;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
     #listHoraires div {
         flex-direction: column;
     }
 }
-
 
 .maps {
     background-color: #C4C4C4;
@@ -316,14 +353,29 @@ hr {
     margin-block-start: 0em;
 }
 
-.input_form div {
+.listInput {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input_form {
+    width: 60%;
+}
+
+.input_form .fields {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
     padding-bottom: 20px;
 }
 
+@media (max-width: 1250px) {
+    .input_form .fields {
+        flex-direction: column;
+    }
+}
 
 #Nom,
 #Email,
@@ -343,59 +395,16 @@ hr {
 .btn_form{
     text-align: right;
     width: 95%;
-    padding-right: 65px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 #btn_contact {
-    width: 100px;
     height: 40px;
     font-weight: bold;
     border-radius: 10px;
-}
-
-/*____________________________________________________________*/
-
-/*   Présentation   */
-
-.presentation_ecole {
     text-align: center;
 }
-
-.div_presentation{
-    text-align: center;
-    list-style-position: inside;
-}
-
-.div_presentation a {
-    color: black;
-    font-weight: bold;
-}
-
-.div_presentation hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: black;
-}
-
-.Volet_pastoral label{
-    font-weight: bold;
-}
-
-.Reglement_interieur {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-.Projet_éducatif {
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-
 
 /*____________________________________________________________*/
 
@@ -505,6 +514,7 @@ a.retour {
     justify-content: center;
     padding-bottom: 10vh;
 }
+
 /*____________________________________________________________*/
 
 /* Connexion  */
