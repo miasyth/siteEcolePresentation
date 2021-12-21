@@ -16,17 +16,17 @@ class ClasseController extends AbstractController
         $elementaire="#ea7d44"; #cours elementaire
         $moyens="#b1434a"; #cours moyens
 
-        if($class=="TPS"){
+        if($class=="TPS-PS"){
 
-            $className="toute petite section";
+            $className="toute petite et petite section";
             $color = $maternelle;
-            $img[0]="TPSBulteau\TPS_1.jpg";
-            $img[1]="TPSBulteau\TPS_2.jpg";
-            $img[2]="TPSBulteau\TPS_3.jpg";
-            $img[3]="TPSBulteau\TPS_4.jpg";
-            $img[4]="TPSBulteau\TPS_5.jpg";
-            $img[5]="TPSBulteau\TPS_6.jpg";
-            $img[6]="TPSBulteau\TPS_7.jpg";
+            $img[0]="TPSPSBulteau\TPSPS_1.jpg";
+            $img[1]="TPSPSBulteau\TPSPS_2.jpg";
+            $img[2]="TPSPSBulteau\TPSPS_3.jpg";
+            $img[3]="TPSPSBulteau\TPSPS_4.jpg";
+            $img[4]="TPSPSBulteau\TPSPS_5.jpg";
+            $img[5]="TPSPSBulteau\TPSPS_6.jpg";
+            $img[6]="TPSPSBulteau\TPSPS_7.jpg";
             $listeProfs="Mme Bulteau";
 
         } else if ($class=="PS-MS"){
@@ -39,7 +39,7 @@ class ClasseController extends AbstractController
             $img[3]="PSMSCandelier\PSMS_4.jpg";
             $img[4]="PSMSCandelier\PSMS_5.jpg";
             $img[5]="PSMSCandelier\PSMS_6.jpg";
-            $listeProfs="Mmes Candelier, Guffroy et Delphine";
+            $listeProfs="Mmes Candelier et Guffroy";
 
         } else if ($class=="MS"){
 
@@ -51,7 +51,7 @@ class ClasseController extends AbstractController
             $img[3]="MSMartinage\MS_4.jpg";
             $img[4]="MSMartinage\MS_5.jpg";
             $img[5]="MSMartinage\MS_6.jpg";
-            $listeProfs="Mme Martinage et Melle Derieux";
+            $listeProfs="Mmes Martinage et Derieux";
 
         } else if ($class=="GS"){
 
