@@ -155,7 +155,7 @@ body{
 
 /*   carrousel  */
 
-#image_presentation {
+.image_presentation {
     width: 100%;
 }
 
