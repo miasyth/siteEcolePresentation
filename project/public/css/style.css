@@ -155,19 +155,19 @@ body{
 
 /*   carrousel  */
 
-.image_presentation {
-    width: 100%;
-}
-
-#image_event{
-    height: 400px;
-}
-
 .image_accueil{
     height: 400px;
 }
 
+.image_presentation {
+    width: 100%;
+}
+
 .image_classe{
+    height: 400px;
+}
+
+.image_event{
     height: 400px;
 }
 
