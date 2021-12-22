@@ -17,9 +17,9 @@
     <div class="container">
         <div>
             <br>
-            <a href="/classes" class="retour"><- Retour</a>
+            <a href="/evenements" class="retour"><- Retour</a>
             <br>
-            <h4>{% block nomClasse %}Classe de {{className}}{% endblock %}</h4> {# insert of class name (full desc) #}
+            <h4>{% block nomEvenement %}Evenement {{nomEvenement}}{% endblock %}</h4> {# insert of event name (full desc) #}
 
             <hr width="20%" color= "{{color}}" align="left">
             <br>
@@ -30,7 +30,7 @@
 
             {% for image in img %}
                     <div class="mySlides">
-                        <img class="image_accueil" src="..\img\Classes\{{image}}" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
+                        <img class="image_accueil_event" src="..\img\Evenement\{{image}}" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
                     </div>
             {% endfor %}
 
@@ -40,18 +40,11 @@
                 </div>
             
             {% else %}
-                <img class="image_accueil" src="..\img\Classes\{{img[0]}}">
+                <img class="image_accueil_event" src="..\img\Evenement\{{img[0]}}">
             {% endif %}
             {# endblock #}
 
             <br>
-
-            {# block profs#}
-
-                <h4>Enseignant(e/s/es):</h4>
-                <p>{{listeProfs}}</p>
-
-            {# endblock #}
 
             {# block newsClasse#}
 

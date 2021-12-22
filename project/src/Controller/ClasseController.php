@@ -18,7 +18,7 @@ class ClasseController extends AbstractController
 
         if($class=="TPS-PS"){
 
-            $className="toute petite et petite section";
+            $className="TPS et PS";
             $color = $maternelle;
             $img[0]="TPSPSBulteau\TPSPS_1.jpg";
             $img[1]="TPSPSBulteau\TPSPS_2.jpg";
@@ -31,7 +31,7 @@ class ClasseController extends AbstractController
 
         } else if ($class=="PS-MS"){
 
-            $className="petite et moyenne section";
+            $className="PS et MS";
             $color = $maternelle;
             $img[0]="PSMSCandelier\PSMS_1.jpg";
             $img[1]="PSMSCandelier\PSMS_2.jpg";
@@ -43,7 +43,7 @@ class ClasseController extends AbstractController
 
         } else if ($class=="MS"){
 
-            $className="moyenne section";
+            $className="MS";
             $color = $maternelle;
             $img[0]="MSMartinage\MS_1.jpg";
             $img[1]="MSMartinage\MS_2.jpg";
@@ -55,7 +55,7 @@ class ClasseController extends AbstractController
 
         } else if ($class=="GS"){
 
-            $className="grande section";            
+            $className="GS";            
             $color = $maternelle;
             $img[0]="GSBaudry\GS_1.jpg";
             $img[1]="GSBaudry\GS_2.jpg";
@@ -67,7 +67,7 @@ class ClasseController extends AbstractController
 
         } else if ($class=="GS-CP"){
 
-            $className="grande section et CP";
+            $className="GS et CP";
             $color = $preparatoire;
             $img[0]="GSCPCamier\GSCP_1.jpg";
             $img[1]="GSCPCamier\GSCP_2.jpg";

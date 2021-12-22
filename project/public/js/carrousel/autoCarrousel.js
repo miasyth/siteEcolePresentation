@@ -18,7 +18,7 @@ let stopCarrousel = _ => {
 }
 
 let resumeCarrousel = _ => {
-    timer = setTimeout(carrousel, 1000);
+    timer = setTimeout(carrousel, 1000); // Resume after 1 second
 }
 
 if(document.getElementsByClassName("mySlides")){
