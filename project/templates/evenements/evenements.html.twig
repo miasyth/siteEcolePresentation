@@ -4,7 +4,88 @@
 
 {% block body  %}
 
+<div class="container">
+    <div>
+        <h4>Evenements</h4>
 
+        <hr width="20%" color= "#b1434a" align="left">
+
+        {% block listeEvenement %}
+
+            <div class="listeEvenement">
+
+                <a class="evenement" href="/evenement/Carnaval">
+                    <div>
+                        <p class="Carnaval">Carnaval</p>
+                    </div>
+                    <img src="img\Evenement\Carnaval\Carnaval.jpg" alt="Carnaval">
+                </a>
+
+                <a class="evenement" href="/evenement/Noël">
+                    <div>
+                        <p class="Noël">Noël</p>
+                    </div>
+                    <img src="img\Evenement\Noël\marcheNoel.jpg" alt="Noël">
+                </a>
+
+                <a class="evenement" href="/evenement/Ceremonie">
+                    <div>
+                        <p class="Ceremonie">Cérémonies</p>
+                    </div>
+                    <img src="img\Evenement\Ceremonie\priere.jpg" alt="Cérémonies de l'école">
+                </a>
+
+                <a class="evenement" href="/evenement/PorteOuverte">
+                    <div>
+                        <p class="PorteOuverte">Portes ouvertes de l'établissement</p>
+                    </div>
+                    <img src="img\Evenement\PorteOuverte\Evenement_Porte_Ouvertes_Presentation_Arras.jpg" alt="Portes ouvertes">
+                </a>
+
+                <a class="evenement" href="/evenement/RencontreSportive">
+                    <div>
+                        <p class="RencontreSportive">Rencontres sportives</p>
+                    </div>
+                    <img src="img\Evenement\RencontreSportive\Handball.jpg" alt="Rencontre sportive">
+                </a>
+
+                <a class="evenement" href="/evenement/SortiePedagogique">
+                    <div>
+                        <p class="SortiePedagogique">Sortie Pédagogique</p>
+                    </div>
+                    <img src="img\Evenement\SortiePedagogique\sortiePedago.jpg" alt="Sortie Pédagogique">
+                </a>
+
+                {#<a class="classe" href="/classe/CE1">
+                    <div>
+                        <p class="coursElementaire">Classe de CE1<br>
+                            Mme Dourlens</p>
+                    </div>
+                    <img src="img\Classes\CE1Dourlens\CE1_illu.jpg" alt="Classe de CE1 de Mme Dourlens">
+                </a>
+
+                <a class="classe" href="/classe/CE12">
+                    <div>
+                        <p class="coursElementaire">Classe de CE1 et CE2<br>
+                            Mme Dartois</p>
+                    </div>
+                    <img src="img\Classes\CE1CE2Dartois\CE1CE2_illu.jpg" alt="Classe de CE1 et CE2 de Mme Dartois">
+                </a>
+
+                <a class="classe" href="/classe/CE2">
+                    <div>
+                        <p class="coursElementaire">Classe de CE2<br>
+                            Mmes Tilloy et Desbuquois</p>
+                    </div>
+                    <img src="img\Classes\CE2Tilloy\CE2_illu.jpg" alt="Classe de CE2 de Mmes Tilloy et Desbuquois">
+                </a>#}
+
+            </div>
+
+        {% endblock %}
+
+    </div>
+</div>
 
     {# <div class="container">
     
