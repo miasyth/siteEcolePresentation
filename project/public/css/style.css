@@ -352,8 +352,6 @@ hr {
     text-decoration: none;
 }
 
-
-
 /*____________________________________________________________*/
 
 /*   Classes   */
@@ -430,37 +428,64 @@ a.retour {
 
 /*   Evenements   */
 
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Create two unequal columns that floats next to each other */
-  .column_event {
-    float: left;
-    padding: 10px;
-  }
-  
-  .left {
-    width: 25%;
-  }
-  
-  .right {
-    width: 75%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+a.evenement div{
+    padding-top: 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 20px;
+    text-align: center;
+    color: black ;
+}
 
-  .container_event{
+a.evenement *{
+    width: 400px;
+}
+
+a.evenement {
+    text-decoration: none;
+}
+
+a.evenement img{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.titre {
+    text-align: center;
+    color: #2F2C2C;
+}
+
+.listeEvenement {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 10vh;
+}
+
+.Carnaval {
+    color: #40a4bc;
+}
+
+.Noël {
+    color: #82b442;
+}
+
+.Ceremonie {
+    color: #ea7d44;
+}
+
+.PorteOuverte {
+    color: #b1434a;
+}
+
+.RencontreSportive {
+    color: #3B5998;
+}
+
+a.retour {
+    text-decoration: none;
+    color: black;
 }
 
 /*____________________________________________________________*/
