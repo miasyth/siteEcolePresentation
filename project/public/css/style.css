@@ -462,9 +462,9 @@ a.evenement img{
     padding-left: 10px;
 }
 
-.titre {
+.titre_event {
     text-align: center;
-    color: #2F2C2C;
+    color: #0f0f0f;
 }
 
 .listeEvenement {
@@ -473,26 +473,6 @@ a.evenement img{
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 10vh;
-}
-
-.Carnaval {
-    color: #40a4bc;
-}
-
-.Noël {
-    color: #82b442;
-}
-
-.Ceremonie {
-    color: #ea7d44;
-}
-
-.PorteOuverte {
-    color: #b1434a;
-}
-
-.RencontreSportive {
-    color: #3B5998;
 }
 
 a.retour {
