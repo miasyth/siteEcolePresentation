@@ -168,7 +168,7 @@ body{
 }
 
 .image_3carrousel{
-    height: 300px;
+    height: 250px;
 }
 
 .image_event{
@@ -180,6 +180,15 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+@media (max-width: 1450px) {
+    .slideshow-container3{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
 
 .slideshow-container3 .mySlides,
@@ -473,6 +482,26 @@ a.evenement img{
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 10vh;
+}
+
+.Carnaval {
+    color: #40a4bc;
+}
+
+.Noël {
+    color: #82b442;
+}
+
+.Ceremonie {
+    color: #ea7d44;
+}
+
+.PorteOuverte {
+    color: #b1434a;
+}
+
+.RencontreSportive {
+    color: #3B5998;
 }
 
 a.retour {

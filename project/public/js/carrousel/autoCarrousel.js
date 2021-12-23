@@ -1,4 +1,4 @@
-let carrousel = id => {
+let startCarrousel = id => {
     let x =document.getElementById(`slideshow${id}`).getElementsByClassName("mySlides");
 
     for (i = 0; i < x.length; i++) {
@@ -11,22 +11,40 @@ let carrousel = id => {
 
 let stopCarrousel = id => {
     clearInterval(timer[id]);
+    indicator[id]=0;
 }
 
 let resumeCarrousel = id => {
-    setTimeout(function() {carrousel(id)}, 1000);// Resume after 1 second 
-    setTimeout(function() {timer[id] = setInterval(function() {carrousel(id)}, 3000)}, 1000);// Change image every 3 seconds
+    if(!indicator[id]){ // si le carrousel ne tourne pas
+        timer[id] = setInterval(function() { // Changes image every 3 seconds
+            startCarrousel(id);
+        }, 3000)
+        indicator[id]=1;
+    }
 }
 
 let slideIndex=[];
 let timer=[];
+let indicator=[];
 
-if(document.getElementsByClassName("slideshow-container")){
+if (document.getElementsByClassName("slideshow-container")){
     let carrousels=Array.from(document.getElementsByClassName("slideshow-container"));
 
-    carrousels.forEach( (_, id) => {
+    carrousels.forEach( (carrousel, id) => {
+        let slides=[];
         slideIndex[id]=0;
-        carrousel(id);
-        timer[id] = setInterval(function() {carrousel(id)}, 3000);// Change image every 3 seconds
+        indicator[id]=1;
+        carrousel.id=`slideshow${id}`
+        startCarrousel(id); // Loads first carrousel
+        timer[id] = setInterval(function() { // Changes image every 3 seconds
+            startCarrousel(id);
+        }, 3000);
+
+        slides= carrousel.getElementsByClassName("image_carrousel");
+
+        for(let i=0 ; i<slides.length ; i++){
+            slides[i].attributes.onmouseover.nodeValue=`stopCarrousel(${id})`;
+            slides[i].attributes.onmouseout.nodeValue=`resumeCarrousel(${id})`;
+        }
     });
 }

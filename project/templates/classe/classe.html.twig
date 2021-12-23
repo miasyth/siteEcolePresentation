@@ -26,11 +26,11 @@
 
             {# block carrousel #}
             {% if img[1] is defined %}
-                <div class="slideshow-container" id="slideshow0">
+                <div class="slideshow-container">
 
             {% for image in img %}
                     <div class="mySlides">
-                        <img class="image_carrousel" src="..\img\Classes\{{image}}" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
+                        <img class="image_carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
                     </div>
             {% endfor %}
 
@@ -48,23 +48,21 @@
                 <h4>Enseignant(e/s/es):</h4>
                 <p>{{listeProfs}}</p>
 
-            {# endblock #}
-
-            {# block newsClasse#}
+            {# endblock #}{# block newsClasse#}
 
                 <h4>Texte:</h4>
                 <p>Exemple de texte de description de classe</p>
 
                 {# block carrousel #}
                 {% if img[1] is defined %}
-                    <div class="slideshow-container" id="slideshow1">
-    
+                    <div class="slideshow-container">
+
                 {% for image in img %}
                         <div class="mySlides">
-                            <img class="image_carrousel" src="..\img\Classes\{{image}}" onmouseover="stopCarrousel(1)" onmouseout="resumeCarrousel(1)">
+                            <img class="image_carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
                         </div>
                 {% endfor %}
-    
+
                     </div>
                 
                 {% else %}
@@ -81,13 +79,13 @@
                 <h4>Texte:</h4>
                 <p>Exemple de texte de description de classe</p>
 
-                {# block carrousel #}
-                {% if img[1] is defined %}
-                    <div class="slideshow-container3" id="3slideshow0">
+                {# block carrousel3 #}
+                {% if img[2] is defined %}
+                    <div class="slideshow-container3">
     
                 {% for image in img %}
                         <div class="mySlides">
-                            <img class="image_3carrousel" src="..\img\Classes\{{image}}" onmouseover="stop3Carrousel(0)" onmouseout="resume3Carrousel(0)">
+                            <img class="image_3carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
                         </div>
                 {% endfor %}
     
