@@ -30,7 +30,7 @@
 
             {% for image in img %}
                     <div class="mySlides">
-                        <img class="image_accueil_event" src="..\img\Evenement\{{image}}" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
+                        <img class="image_accueil" src="..\img\Evenement\{{image}}" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
                     </div>
             {% endfor %}
 
@@ -40,7 +40,7 @@
                 </div>
             
             {% else %}
-                <img class="image_accueil_event" src="..\img\Evenement\{{img[0]}}">
+                <img class="image_accueil" src="..\img\Evenement\{{img[0]}}">
             {% endif %}
             {# endblock #}
 
@@ -49,7 +49,7 @@
             {# block newsClasse#}
 
                 <h4>Texte:</h4>
-                <p>Exemple de texte de description de classe</p>
+                <p>Exemple de texte de description de l'événement</p>
 
             {# endblock #}
 

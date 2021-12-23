@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class EvenementController extends AbstractController
 {
@@ -30,9 +30,9 @@ class EvenementController extends AbstractController
             $color = $titre_event;
             $img[0]="Noël\decoNoel.jpg";
             $img[1]="Noël\Evenement_Marche_noel_Presentation_Arras.jpg";
-            $img[2]="Noël\facadeNoel.jpg";
+            $img[2]="Noël/facadeNoel.jpg";
             $img[3]="Noël\marcheNoel.jpg";
-            $img[4]="Noël\noelCollecte.jpg";
+            $img[4]="Noël/noelCollecte.jpg";
             $img[5]="Noël\saintNicolas.jpg";
             $img[5]="Noël\sapinPetits.jpg";
 
@@ -48,7 +48,7 @@ class EvenementController extends AbstractController
             $nomEvenement="Portes Ouvertes";            
             $color = $titre_event;
             $img[0]="PorteOuverte\Evenement_Porte_Ouvertes_Presentation_Arras.jpg";
-            $img[1]="PorteOuverte\rentréeClasse.jpg";
+            $img[1]="PorteOuverte/rentréeClasse.jpg";
 
         } else if ($class=="RencontreSportive"){
 
