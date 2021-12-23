@@ -16,12 +16,19 @@ let carrousel3 = id => {
 }
 
 let stop3Carrousel = id => {
+    console.log(timer3[id]);
     clearInterval(timer3[id]);
+    timer3[id]=0;
+    console.log(timer3[id]);
 }
 
 let resume3Carrousel = id => {
-    setTimeout(function() {carrousel3(id)}, 1000);// Resume after 1 second 
-    setTimeout(function() {timer3[id] = setInterval(function() {carrousel3(id)}, 3000)}, 1000);// Change image every 3 seconds
+    if (!timer3[id]) { // Resumes after 1 second then changes image every 3 seconds
+        setTimeout(function() {
+            carrousel3(id);
+            timer3[id] = setInterval(function() {carrousel3(id)}, 3000)}
+            , 1000);
+    }
 }
 
 let slideIndex3=[[]];
