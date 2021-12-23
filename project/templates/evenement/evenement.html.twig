@@ -30,23 +30,20 @@
 
             {% for image in img %}
                     <div class="mySlides">
-                        <img class="image_accueil" src="..\img\Evenement\{{image}}" onmouseover="stopCarrousel()" onmouseout="resumeCarrousel()">
+                        <img class="image_carrousel" src="..\img\Evenement\{{image}}" onmouseover="" onmouseout="">
                     </div>
             {% endfor %}
-
-                    {#<a class="prev" onclick="buttonSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="buttonSlides(1)">&#10095;</a>#}
 
                 </div>
             
             {% else %}
-                <img class="image_accueil" src="..\img\Evenement\{{img[0]}}">
+                <img class="image_presentation" src="..\img\Evenement\{{img[0]}}">
             {% endif %}
             {# endblock #}
 
             <br>
 
-            {# block newsClasse#}
+            {# block newsEvenemente#}
 
                 <h4>Texte:</h4>
                 <p>Exemple de texte de description de l'événement</p>

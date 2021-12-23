@@ -163,16 +163,20 @@ body{
     height: 400px;
 }
 
+.image_classe {
+    height: 400px;
+}
+
+.image_event{
+    height: 400px;
+}
+
 .image_carrousel{
     height: 400px;
 }
 
 .image_3carrousel{
     height: 250px;
-}
-
-.image_event{
-    height: 400px;
 }
 
 .slideshow-container3{
