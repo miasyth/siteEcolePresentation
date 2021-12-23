@@ -9,21 +9,23 @@
         Sainte Marie de la Présentation
     </h1>
 
-    <div class="slideshow-container" id="slideshow0">
+    {% if img[1] is defined %}
 
-        <div class="mySlides">
-            <img class="image_accueil" src=".\img\Facade\Façade1.jpeg" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
-        </div>
+    <div class="slideshow-container3" id="3slideshow0">
 
-        <div class="mySlides">
-            <img class="image_accueil" src=".\img\CoursRecre\Primaire\CoursPrimaire1.jpeg" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
-        </div>
+        {% for image in img %}
 
-        <div class="mySlides">
-            <img class="image_accueil" src=".\img\Biblio\Biblio4.jpeg" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
-        </div>
-
+            <div class="mySlides">
+                <img class="image_3carrousel" src=".\img\{{image}}" onmouseover="stop3Carrousel(0)" onmouseout="resume3Carrousel(0)">
+            </div>                
+       
+        {% endfor %}
+    
     </div>
+    {% else %}
+        <img class="image_3carrousel" src="..\img\Classes\{{img[0]}}">
+    {% endif %}
+
 
     <br>
 
@@ -106,6 +108,6 @@
 
 {% block javascripts %}
     <script type="text/javascript" src="js/accueil/accueil.js"></script>
-    <script type="text/javascript" src="js/carrousel/autoCarrousel.js"></script>
+    <script type="text/javascript" src="../js/carrousel/auto3Carrousel.js"></script>
     <script type="text/javascript" src="js/background/background.js"></script>
 {% endblock %}
