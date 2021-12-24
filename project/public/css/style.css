@@ -59,9 +59,10 @@ header {
     width: 200px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1190px) {
     .horizontal {
         flex-direction: column;
+        padding-bottom: 20px;
     }
 
     .horizontal div {

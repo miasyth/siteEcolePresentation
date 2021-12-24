@@ -16,10 +16,10 @@ let stopCarrousel = id => {
 
 let resumeCarrousel = id => {
     if(!indicator[id]){ // si le carrousel ne tourne pas
-        timer[id] = setInterval(function() { // Changes image every 3 seconds
+        timer[id] = setInterval(function() { // Changes l'image toutes les 3 seconds
             startCarrousel(id);
-        }, 3000)
-        indicator[id]=1;
+            indicator[id]=1;
+        }, 3000);
     }
 }
 
@@ -35,8 +35,8 @@ if (document.getElementsByClassName("slideshow-container")){
         slideIndex[id]=0;
         indicator[id]=1;
         carrousel.id=`slideshow${id}`
-        startCarrousel(id); // Loads first carrousel
-        timer[id] = setInterval(function() { // Changes image every 3 seconds
+        startCarrousel(id); // Affiches les 3 premieres images
+        timer[id] = setInterval(function() { // Changes l'image toutes les 3 seconds
             startCarrousel(id);
         }, 3000);
 

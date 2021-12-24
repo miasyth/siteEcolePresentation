@@ -4,30 +4,33 @@
 
 {% block body %}
 
-    <h1 class="titre">
-        Enseignement catholique <br>
-        Sainte Marie de la Présentation
-    </h1>
+    <div class="container">
+        <br>
+        <h1 class="titre">
+            Enseignement catholique <br>
+            Sainte Marie de la Présentation
+        </h1>
 
-    {% if img[1] is defined %}
-
-    <div class="slideshow-container3" id="3slideshow0">
+        {# block carrousel3 #}
+        {% if img[2] is defined %}
+            <div class="slideshow-container3">
 
         {% for image in img %}
-
-            <div class="mySlides">
-                <img class="image_3carrousel" src=".\img\{{image}}" onmouseover="stop3Carrousel(0)" onmouseout="resume3Carrousel(0)">
-            </div>                
-       
+                <div class="mySlides">
+                    <img class="image_3carrousel" src="..\img\{{image}}" onmouseover="" onmouseout="">
+                </div>
         {% endfor %}
-    
+
+            </div>
+
+        {% else %}
+            <img class="image_3carrousel" src="..\img\{{img[0]}}">
+        {% endif %}
+        {# endblock #}
+
+
+        <br>
     </div>
-    {% else %}
-        <img class="image_3carrousel" src="..\img\Classes\{{img[0]}}">
-    {% endif %}
-
-
-    <br>
 
     <div class="horaire">
         <div class="Titre_horaire">
