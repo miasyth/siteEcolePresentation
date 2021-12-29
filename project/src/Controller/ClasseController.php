@@ -20,133 +20,157 @@ class ClasseController extends AbstractController
 
             $className="TPS et PS";
             $color = $maternelle;
-            $img[0]="TPSPSBulteau\TPSPS_1.jpg";
-            $img[1]="TPSPSBulteau\TPSPS_2.jpg";
-            $img[2]="TPSPSBulteau\TPSPS_3.jpg";
-            $img[3]="TPSPSBulteau\TPSPS_4.jpg";
-            $img[4]="TPSPSBulteau\TPSPS_5.jpg";
-            $img[5]="TPSPSBulteau\TPSPS_6.jpg";
-            $img[6]="TPSPSBulteau\TPSPS_7.jpg";
+            $img=[
+                "TPSPSBulteau\TPSPS_1.jpg",
+                "TPSPSBulteau\TPSPS_2.jpg",
+                "TPSPSBulteau\TPSPS_3.jpg",
+                "TPSPSBulteau\TPSPS_4.jpg",
+                "TPSPSBulteau\TPSPS_5.jpg",
+                "TPSPSBulteau\TPSPS_6.jpg",
+                "TPSPSBulteau\TPSPS_7.jpg"
+            ];
             $listeProfs="Mme Bulteau";
 
         } else if ($class=="PS-MS"){
 
             $className="PS et MS";
             $color = $maternelle;
-            $img[0]="PSMSCandelier\PSMS_1.jpg";
-            $img[1]="PSMSCandelier\PSMS_2.jpg";
-            $img[2]="PSMSCandelier\PSMS_3.jpg";
-            $img[3]="PSMSCandelier\PSMS_4.jpg";
-            $img[4]="PSMSCandelier\PSMS_5.jpg";
-            $img[5]="PSMSCandelier\PSMS_6.jpg";
+            $img=[
+                "PSMSCandelier\PSMS_1.jpg",
+                "PSMSCandelier\PSMS_2.jpg",
+                "PSMSCandelier\PSMS_3.jpg",
+                "PSMSCandelier\PSMS_4.jpg",
+                "PSMSCandelier\PSMS_5.jpg",
+                "PSMSCandelier\PSMS_6.jpg"
+            ];
             $listeProfs="Mmes Candelier et Guffroy";
 
         } else if ($class=="MS"){
 
             $className="MS";
             $color = $maternelle;
-            $img[0]="MSMartinage\MS_1.jpg";
-            $img[1]="MSMartinage\MS_2.jpg";
-            $img[2]="MSMartinage\MS_3.jpg";
-            $img[3]="MSMartinage\MS_4.jpg";
-            $img[4]="MSMartinage\MS_5.jpg";
-            $img[5]="MSMartinage\MS_6.jpg";
+            $img=[
+                "MSMartinage\MS_1.jpg",
+                "MSMartinage\MS_2.jpg",
+                "MSMartinage\MS_3.jpg",
+                "MSMartinage\MS_4.jpg",
+                "MSMartinage\MS_5.jpg",
+                "MSMartinage\MS_6.jpg"
+            ];
             $listeProfs="Mmes Martinage et Derieux";
 
         } else if ($class=="GS"){
 
             $className="GS";            
             $color = $maternelle;
-            $img[0]="GSBaudry\GS_1.jpg";
-            $img[1]="GSBaudry\GS_2.jpg";
-            $img[2]="GSBaudry\GS_3.jpg";
-            $img[3]="GSBaudry\GS_4.jpg";
-            $img[4]="GSBaudry\GS_5.jpg";
-            $img[5]="GSBaudry\GS_6.jpg";
+            $img=[
+                "GSBaudry\GS_1.jpg",
+                "GSBaudry\GS_2.jpg",
+                "GSBaudry\GS_3.jpg",
+                "GSBaudry\GS_4.jpg",
+                "GSBaudry\GS_5.jpg",
+                "GSBaudry\GS_6.jpg"
+            ];
             $listeProfs="Mme Baudry";
 
         } else if ($class=="GS-CP"){
 
             $className="GS et CP";
             $color = $preparatoire;
-            $img[0]="GSCPCamier\GSCP_1.jpg";
-            $img[1]="GSCPCamier\GSCP_2.jpg";
-            $img[2]="GSCPCamier\GSCP_3.jpg";
-            $img[3]="GSCPCamier\GSCP_4.jpg";
-            $img[4]="GSCPCamier\GSCP_5.jpg";
-            $img[5]="GSCPCamier\GSCP_6.jpg";
+            $img=[
+                "GSCPCamier\GSCP_1.jpg",
+                "GSCPCamier\GSCP_2.jpg",
+                "GSCPCamier\GSCP_3.jpg",
+                "GSCPCamier\GSCP_4.jpg",
+                "GSCPCamier\GSCP_5.jpg",
+                "GSCPCamier\GSCP_6.jpg"
+            ];
             $listeProfs="Mme Camier";
 
         } else if ($class=="CP"){
 
             $className="CP";
             $color = $preparatoire;
-            $img[0]="CPCaillieriez\CP_1.jpg";
-            $img[1]="CPCaillieriez\CP_2.jpg";
-            $img[2]="CPCaillieriez\CP_3.jpg";
-            $img[3]="CPCaillieriez\CP_4.jpg";
-            $img[4]="CPCaillieriez\CP_5.jpg";
+            $img=[
+                "CPCaillieriez\CP_1.jpg",
+                "CPCaillieriez\CP_2.jpg",
+                "CPCaillieriez\CP_3.jpg",
+                "CPCaillieriez\CP_4.jpg",
+                "CPCaillieriez\CP_5.jpg"
+            ];
             $listeProfs="Mme Caillieriez";
 
         } else if ($class=="CE1"){
 
             $className="CE1";
             $color = $elementaire;
-            $img[0]="CE1Dourlens\CE1_1.jpg";
-            $img[1]="CE1Dourlens\CE1_2.jpg";
-            $img[2]="CE1Dourlens\CE1_3.jpg";
-            $img[3]="CE1Dourlens\CE1_4.jpg";
+            $img=[
+                "CE1Dourlens\CE1_1.jpg",
+                "CE1Dourlens\CE1_2.jpg",
+                "CE1Dourlens\CE1_3.jpg",
+                "CE1Dourlens\CE1_4.jpg"
+            ];
             $listeProfs="Mme Dourlens";
 
         } else if ($class=="CE12"){
 
             $className="CE1 et CE2";
             $color = $elementaire;
-            $img[0]="CE1CE2Dartois\CE1CE2_1.jpg";
-            $img[1]="CE1CE2Dartois\CE1CE2_2.jpg";
-            $img[2]="CE1CE2Dartois\CE1CE2_3.jpg";
-            $img[3]="CE1CE2Dartois\CE1CE2_4.jpg";
-            $img[4]="CE1CE2Dartois\CE1CE2_5.jpg";
-            $img[5]="CE1CE2Dartois\CE1CE2_6.jpg";
+            $img=[
+                "CE1CE2Dartois\CE1CE2_1.jpg",
+                "CE1CE2Dartois\CE1CE2_2.jpg",
+                "CE1CE2Dartois\CE1CE2_3.jpg",
+                "CE1CE2Dartois\CE1CE2_4.jpg",
+                "CE1CE2Dartois\CE1CE2_5.jpg",
+                "CE1CE2Dartois\CE1CE2_6.jpg"
+            ];
             $listeProfs="Mme Dartois";
 
         } else if ($class=="CE2"){
 
             $className="CE2";
             $color = $elementaire;
-            $img[0]="CE2Tilloy\CE2_1.jpg";
-            $img[1]="CE2Tilloy\CE2_2.jpg";
-            $img[2]="CE2Tilloy\CE2_3.jpg";
-            $img[3]="CE2Tilloy\CE2_4.jpg";
-            $img[4]="CE2Tilloy\CE2_5.jpg";
-            $img[5]="CE2Tilloy\CE2_6.jpg";
+            $img=[
+                "CE2Tilloy\CE2_1.jpg",
+                "CE2Tilloy\CE2_2.jpg",
+                "CE2Tilloy\CE2_3.jpg",
+                "CE2Tilloy\CE2_4.jpg",
+                "CE2Tilloy\CE2_5.jpg",
+                "CE2Tilloy\CE2_6.jpg"
+            ];
             $listeProfs="Mmes Tilloy et Desbuquois";
 
         } else if ($class=="CM1"){
 
             $className="CM1";
             $color = $moyens;
-            $img[0]="CM1Bossuwe\CM1_1.jpg";
+            $img=[
+                "CM1Bossuwe\CM1_1.jpg"
+            ];
             $listeProfs="M Bossuwe";
 
         } else if ($class=="CM12"){
 
             $className="CM1 et CM2";
             $color = $moyens;
-            $img[0]="CM1CM2Duhamel\CM1CM2_1.jpg";
-            $img[1]="CM1CM2Duhamel\CM1CM2_2.jpg";
-            $img[2]="CM1CM2Duhamel\CM1CM2_3.jpg";
-            $img[3]="CM1CM2Duhamel\CM1CM2_4.jpg";
+            $img=[
+                "CM1CM2Duhamel\CM1CM2_1.jpg",
+                "CM1CM2Duhamel\CM1CM2_2.jpg",
+                "CM1CM2Duhamel\CM1CM2_3.jpg",
+                "CM1CM2Duhamel\CM1CM2_4.jpg"
+            ];
             $listeProfs="Mmes Dupont et Duhamel";
 
         } else if ($class=="CM2"){
 
             $className="CM2";
             $color = $moyens;
-            $img[0]="CM2Cazer\CM2_1.jpg";
-            $img[1]="CM2Cazer\CM2_2.jpg";
-            $img[2]="CM2Cazer\CM2_3.jpg";
-            $img[3]="CM2Cazer\CM2_4.jpg";
+            $img=[
+                "CM2Cazer\CM2_1.jpg",
+                "CM2Cazer\CM2_2.jpg",
+                "CM2Cazer\CM2_3.jpg",
+                "CM2Cazer\CM2_4.jpg"
+            ];
             $listeProfs="Mmes Cazer et Heil";
 
         } else {
