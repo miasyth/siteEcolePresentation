@@ -25,29 +25,13 @@
         </p>
         <p>
 
-        <!-- Container for the image gallery -->
-        <div class="slideshow-container" id="slideshow0">
+        <div class="slideshow-container">
 
-            <!-- Full-width images with number text -->
-            <div class="mySlides">
-                <img src=".\img\CoursRecre\Maternelle\CoursMaternelle1.jpg" class="image_presentation" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
-            </div>
-        
-            <div class="mySlides">
-                <img src=".\img\SalleRestauration\Maternelle\cantinePetits2.jpg" class="image_presentation" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
-            </div>
-        
-            <div class="mySlides">
-                <img src=".\img\SalleRestauration\Primaire\cantine1.jpg" class="image_presentation" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
-            </div>
-        
-            <div class="mySlides">
-                <img src=".\img\MobiliterReduite\mobilité.png" class="image_presentation" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
-            </div>
-        
-            <div class="mySlides">
-                <img src=".\img\SalleMotricite\SalleMotricite1.jpg" class="image_presentation" onmouseover="stopCarrousel(0)" onmouseout="resumeCarrousel(0)">
-            </div>
+            {% for image in img %}
+                    <div class="mySlides">
+                        <img class="image_carrousel" src="..\img\{{image}}" onmouseover="" onmouseout="">
+                    </div>
+            {% endfor %}
 
         </div>
     </div>
@@ -57,12 +41,12 @@
         <div class= "div_presentation">
             <div class="Reglement_interieur">
                 <i class="fas fa-file-pdf"></i>
-                <a href="PDF\Reglement\REGLEMENT INERIEUR DE L ECOLE SAINTE MARIE DE LA  PRESENTATION.pdf" target="_blank">Notre réglement intérieur</a>
+                <a href="PDF\Reglement\{{reglement}}" target="_blank">Notre réglement intérieur</a>
                 <hr width="20%" color= "#40a4bc">
             </div>
             <div class="Projet_éducatif">
                 <i class="fas fa-file-pdf"></i>
-                <a href="PDF\Projet_éducatif\Projet_éducatif.pdf" target="_blank">Le Projet éducatif</a>
+                <a href="PDF\Projet_éducatif\{{projetEducatif}}" target="_blank">Le Projet éducatif</a>
                 <hr width="20%" color= "#40a4bc">
             </div>
             <div class="Volet_Pastoral">
