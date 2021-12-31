@@ -14,7 +14,7 @@ class ClasseController extends AbstractController
         $maternelle="#40a4bc"; #maternelle
         $preparatoire="#82b442"; #cours preparatoire
         $elementaire="#ea7d44"; #cours elementaire
-        $moyens="#b1434a"; #cours moyens
+        $moyen="#b1434a"; #cours moyen
 
         if($class=="TPS-PS"){
 
@@ -143,7 +143,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CM1"){
 
             $className="CM1";
-            $color = $moyens;
+            $color = $moyen;
             $img=[
                 "CM1Bossuwe\CM1_1.jpg"
             ];
@@ -152,7 +152,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CM12"){
 
             $className="CM1 et CM2";
-            $color = $moyens;
+            $color = $moyen;
             $img=[
                 "CM1CM2Duhamel\CM1CM2_1.jpg",
                 "CM1CM2Duhamel\CM1CM2_2.jpg",
@@ -164,7 +164,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CM2"){
 
             $className="CM2";
-            $color = $moyens;
+            $color = $moyen;
             $img=[
                 "CM2Cazer\CM2_1.jpg",
                 "CM2Cazer\CM2_2.jpg",

@@ -14,101 +14,14 @@
 
                 <div class="listeClasse">
 
-                    <a class="classe" href="/classe/TPS-PS">
+                {% for classe in classes %}
+                    <a class="classe" href='/classe/{{classe.link}}'>
                         <div>
-                            <p class="maternelle">Classe de TPS et PS<br>
-                                Mme Bulteau</p>
+                            <p class='{{classe.level}}'>Classe de {{classe.htmlDesc.0}}<br>{{classe.htmlDesc.1}}
                         </div>
-                        <img src="img\Classes\TPSPSBulteau\TPSPS_illu.jpg" alt="Classe de TPS et PS de Mme Bulteau">
+                        <img src="img\Classes\{{classe.illu}}_illu.jpg">
                     </a>
-
-                    <a class="classe" href="/classe/PS-MS">
-                        <div>
-                            <p class="maternelle">Classe de PS et MS<br>
-                                Mmes Candelier et Guffroy</p>
-                        </div>
-                        <img src="img\Classes\PSMSCandelier\PSMS_illu.jpg" alt="Classe de PS et MS de Mmes Candelier et Guffroy">
-                    </a>
-
-                    <a class="classe" href="/classe/MS">
-                        <div>
-                            <p class="maternelle">Classe de MS<br>
-                                Mmes Martinage et Derieux</p>
-                        </div>
-                        <img src="img\Classes\MSMartinage\MS_illu.jpg" alt="Classe de MS de Mmes Martinage et Derieux">
-                    </a>
-
-                    <a class="classe" href="/classe/GS">
-                        <div>
-                            <p class="maternelle">Classe de GS<br>
-                                Mme Baudry</p>
-                        </div>
-                        <img src="img\Classes\GSBaudry\GS_illu.jpg" alt="Classe de GS de Mme Baudry">
-                    </a>
-
-                    <a class="classe" href="/classe/GS-CP">
-                        <div>
-                            <p class="coursPreparatoire">Classe de GS et CP<br>
-                                Mme Camier</p>
-                        </div>
-                        <img src="img\Classes\GSCPCamier\GSCP_illu.jpg" alt="Classe de GS et CP de Mme Camier">
-                    </a>
-
-                    <a class="classe" href="/classe/CP">
-                        <div>
-                            <p class="coursPreparatoire">Classe de CP<br>
-                                Mme Caillieriez</p>
-                        </div>
-                        <img src="img\Classes\CPCaillieriez\CP_illu.jpg" alt="Classe de CP de Mme Caillieriez">
-                    </a>
-
-                    <a class="classe" href="/classe/CE1">
-                        <div>
-                            <p class="coursElementaire">Classe de CE1<br>
-                                Mme Dourlens</p>
-                        </div>
-                        <img src="img\Classes\CE1Dourlens\CE1_illu.jpg" alt="Classe de CE1 de Mme Dourlens">
-                    </a>
-
-                    <a class="classe" href="/classe/CE12">
-                        <div>
-                            <p class="coursElementaire">Classe de CE1 et CE2<br>
-                                Mme Dartois</p>
-                        </div>
-                        <img src="img\Classes\CE1CE2Dartois\CE1CE2_illu.jpg" alt="Classe de CE1 et CE2 de Mme Dartois">
-                    </a>
-
-                    <a class="classe" href="/classe/CE2">
-                        <div>
-                            <p class="coursElementaire">Classe de CE2<br>
-                                Mmes Tilloy et Desbuquois</p>
-                        </div>
-                        <img src="img\Classes\CE2Tilloy\CE2_illu.jpg" alt="Classe de CE2 de Mmes Tilloy et Desbuquois">
-                    </a>
-
-                    <a class="classe" href="/classe/CM1">
-                        <div>
-                            <p class="coursMoyen">Classe de CM1<br>
-                                M Bossuwe</p>
-                        </div>
-                        <img src="img\Classes\CM1Bossuwe\CM1_illu.jpg" alt="Classe de CM1 de M Bossuwe">
-                    </a>
-
-                    <a class="classe" href="/classe/CM12">
-                        <div>
-                            <p class="coursMoyen">Classe de CM1 et CM2<br>
-                                Mmes Dupont et Duhamel</p>
-                        </div>
-                        <img src="img\Classes\CM1CM2Duhamel\CM1CM2_illu.jpg" alt="Classe de CM1 et CM2 de Mmes Dupont et Duhamel">
-                    </a>
-
-                    <a class="classe" href="/classe/CM2">
-                        <div>
-                            <p class="coursMoyen">Classe de CM2<br>
-                                Mmes Cazer et Heil</p>
-                        </div>
-                        <img src="img\Classes\CM2Cazer\CM2_illu.jpg" alt="Classe de CM2 de Mmes Cazer et Heil">
-                    </a>
+                {% endfor %}
 
                 </div>
 
