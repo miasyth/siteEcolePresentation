@@ -8,67 +8,79 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class EvenementController extends AbstractController
 {
-    #[Route('/evenement/{class}', name: 'details evenement')]
-    public function index(string $class): Response
+    #[Route('/evenement/{event}', name: 'details evenement')]
+    public function index(string $event): Response
     {
 
         $titre_event="#0f0f0f"; #couleur événement
 
-        if($class=="Carnaval"){
+        if($event=="Carnaval"){
 
             $nomEvenement="Carnaval";
             $color = $titre_event;
-            $img[0]="Carnaval\Carnaval.jpg";
-            $img[1]="Carnaval\Carnaval1.jpg";
-            $img[2]="Carnaval\Carnaval2.jpg";
-            $img[3]="Carnaval\Carnaval3.jpg";
-            $img[4]="Carnaval\Carnaval4.jpg";
+            $img=[
+                "Carnaval\Carnaval.jpg",
+                "Carnaval\Carnaval1.jpg",
+                "Carnaval\Carnaval2.jpg",
+                "Carnaval\Carnaval3.jpg",
+                "Carnaval\Carnaval4.jpg"
+            ];
 
-        } else if ($class=="Noël"){
+        } else if ($event=="Noel"){
 
             $nomEvenement="Noël";
             $color = $titre_event;
-            $img[0]="Noël\decoNoel.jpg";
-            $img[1]="Noël\Evenement_Marche_noel_Presentation_Arras.jpg";
-            $img[2]="Noël/facadeNoel.jpg";
-            $img[3]="Noël\marcheNoel.jpg";
-            $img[4]="Noël/noelCollecte.jpg";
-            $img[5]="Noël\saintNicolas.jpg";
-            $img[5]="Noël\sapinPetits.jpg";
+            $img=[
+                "Noël/decoNoel.jpg",
+                "Noël/Evenement_Marche_noel_Presentation_Arras.jpg",
+                "Noël/facadeNoel.jpg",
+                "Noël/marcheNoel.jpg",
+                "Noël/noelCollecte.jpg",
+                "Noël/saintNicolas.jpg",
+                "Noël/sapinPetits.jpg"
+            ];
 
-        } else if ($class=="Ceremonies"){
+        } else if ($event=="Ceremonie"){
 
             $nomEvenement="Ceremonie";
             $color = $titre_event;
-            $img[0]="Ceremonie\messePremiereCommunion.jpg";
-            $img[1]="Ceremonie\priere.jpg";
+            $img=[
+                "Ceremonie\messePremiereCommunion.jpg",
+                "Ceremonie\priere.jpg"
+            ];
 
-        } else if ($class=="PorteOuverte"){
+        } else if ($event=="PorteOuverte"){
 
             $nomEvenement="Portes Ouvertes";            
             $color = $titre_event;
-            $img[0]="PorteOuverte\Evenement_Porte_Ouvertes_Presentation_Arras.jpg";
-            $img[1]="PorteOuverte/rentréeClasse.jpg";
+            $img=[
+                "PorteOuverte\Evenement_Porte_Ouvertes_Presentation_Arras.jpg",
+                "PorteOuverte/rentréeClasse.jpg"
+            ];
 
-        } else if ($class=="RencontreSportive"){
+        } else if ($event=="RencontreSportive"){
 
             $nomEvenement="Rencontres Sportives";
             $color = $titre_event;
-            $img[0]="RencontreSportive\Handball.jpg";
+            $img=[
+                "RencontreSportive\Handball.jpg"
+            ];
 
-        } else if ($class=="SortiePedagogique"){
+        } else if ($event=="SortiePedagogique"){
 
             $nomEvenement="Sorties Pedagogiques";
             $color = $titre_event;
-            $img[0]="SortiePedagogique\sortiePedago.jpg";
-            $img[1]="SortiePedagogique\sortiePedagoStTeres.jpg";
+            $img=[
+                "SortiePedagogique\sortiePedago.jpg",
+                "SortiePedagogique\sortiePedagoStTeres.jpg"
+            ];
 
         } else {
             return $this->redirectToRoute('evenements');
         }
 
         return $this->render('evenement/evenement.html.twig', [
-            'class' => $class,
+            'event' => $event,
             'nomEvenement' => $nomEvenement,
             'img' => $img,
             'color' => $color,
