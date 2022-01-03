@@ -12,12 +12,9 @@ class EvenementController extends AbstractController
     public function index(string $event): Response
     {
 
-        $titre_event="#0f0f0f"; #couleur événement
-
         if($event=="Carnaval"){
 
             $nomEvenement="Carnaval";
-            $color = $titre_event;
             $img=[
                 "Carnaval\Carnaval.jpg",
                 "Carnaval\Carnaval1.jpg",
@@ -29,7 +26,6 @@ class EvenementController extends AbstractController
         } else if ($event=="Noel"){
 
             $nomEvenement="Noël";
-            $color = $titre_event;
             $img=[
                 "Noël/decoNoel.jpg",
                 "Noël/Evenement_Marche_noel_Presentation_Arras.jpg",
@@ -43,7 +39,6 @@ class EvenementController extends AbstractController
         } else if ($event=="Ceremonie"){
 
             $nomEvenement="Ceremonie";
-            $color = $titre_event;
             $img=[
                 "Ceremonie\messePremiereCommunion.jpg",
                 "Ceremonie\priere.jpg"
@@ -52,7 +47,6 @@ class EvenementController extends AbstractController
         } else if ($event=="PorteOuverte"){
 
             $nomEvenement="Portes Ouvertes";            
-            $color = $titre_event;
             $img=[
                 "PorteOuverte\Evenement_Porte_Ouvertes_Presentation_Arras.jpg",
                 "PorteOuverte/rentréeClasse.jpg"
@@ -61,7 +55,6 @@ class EvenementController extends AbstractController
         } else if ($event=="RencontreSportive"){
 
             $nomEvenement="Rencontres Sportives";
-            $color = $titre_event;
             $img=[
                 "RencontreSportive\Handball.jpg"
             ];
@@ -69,7 +62,6 @@ class EvenementController extends AbstractController
         } else if ($event=="SortiePedagogique"){
 
             $nomEvenement="Sorties Pedagogiques";
-            $color = $titre_event;
             $img=[
                 "SortiePedagogique\sortiePedago.jpg",
                 "SortiePedagogique\sortiePedagoStTeres.jpg"
@@ -82,8 +74,7 @@ class EvenementController extends AbstractController
         return $this->render('evenement/evenement.html.twig', [
             'event' => $event,
             'nomEvenement' => $nomEvenement,
-            'img' => $img,
-            'color' => $color,
+            'img' => $img
         ]);
     }
 }

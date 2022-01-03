@@ -15,32 +15,32 @@ class EvenementsController extends AbstractController
             [
                 'link'=>'Carnaval',
                 'title'=>'Carnaval',
-                'illu'=>'Carnaval\Carnaval'
+                'illu'=>'Carnaval\Carnaval.jpg'
             ],
             [
                 'link'=>'Noel',
                 'title'=>'Noël',
-                'illu'=>'Noël\marcheNoel'
+                'illu'=>'Noël\marcheNoel.jpg'
             ],
             [
                 'link'=>'Ceremonie',
                 'title'=>'Cérémonie',
-                'illu'=>'Ceremonie\priere'
+                'illu'=>'Ceremonie\priere.jpg'
             ],
             [
                 'link'=>'PorteOuverte',
                 'title'=>'Portes ouvertes de l\'établissement',
-                'illu'=>'PorteOuverte\Evenement_Porte_Ouvertes_Presentation_Arras'
+                'illu'=>'PorteOuverte\Evenement_Porte_Ouvertes_Presentation_Arras.jpg'
             ],
             [
                 'link'=>'RencontreSportive',
                 'title'=>'Rencontres sportives',
-                'illu'=>'RencontreSportive\Handball'
+                'illu'=>'RencontreSportive\Handball.jpg'
             ],
             [
                 'link'=>'SortiePedagogique',
                 'title'=>'Sortie Pédagogique',
-                'illu'=>'SortiePedagogique\sortiePedago'
+                'illu'=>'SortiePedagogique\sortiePedago.jpg'
             ]
         ];
 

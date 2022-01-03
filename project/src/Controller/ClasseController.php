@@ -19,7 +19,7 @@ class ClasseController extends AbstractController
         if($class=="TPS-PS"){
 
             $className="TPS et PS";
-            $color = $maternelle;
+            $level = "maternelle";
             $img=[
                 "TPSPSBulteau\TPSPS_1.jpg",
                 "TPSPSBulteau\TPSPS_2.jpg",
@@ -34,7 +34,7 @@ class ClasseController extends AbstractController
         } else if ($class=="PS-MS"){
 
             $className="PS et MS";
-            $color = $maternelle;
+            $level = "maternelle";
             $img=[
                 "PSMSCandelier\PSMS_1.jpg",
                 "PSMSCandelier\PSMS_2.jpg",
@@ -48,7 +48,7 @@ class ClasseController extends AbstractController
         } else if ($class=="MS"){
 
             $className="MS";
-            $color = $maternelle;
+            $level = "maternelle";
             $img=[
                 "MSMartinage\MS_1.jpg",
                 "MSMartinage\MS_2.jpg",
@@ -62,7 +62,7 @@ class ClasseController extends AbstractController
         } else if ($class=="GS"){
 
             $className="GS";            
-            $color = $maternelle;
+            $level = "maternelle";
             $img=[
                 "GSBaudry\GS_1.jpg",
                 "GSBaudry\GS_2.jpg",
@@ -76,7 +76,7 @@ class ClasseController extends AbstractController
         } else if ($class=="GS-CP"){
 
             $className="GS et CP";
-            $color = $preparatoire;
+            $level = "preparatoire";
             $img=[
                 "GSCPCamier\GSCP_1.jpg",
                 "GSCPCamier\GSCP_2.jpg",
@@ -90,7 +90,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CP"){
 
             $className="CP";
-            $color = $preparatoire;
+            $level = "preparatoire";
             $img=[
                 "CPCaillieriez\CP_1.jpg",
                 "CPCaillieriez\CP_2.jpg",
@@ -103,7 +103,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CE1"){
 
             $className="CE1";
-            $color = $elementaire;
+            $level = "elementaire";
             $img=[
                 "CE1Dourlens\CE1_1.jpg",
                 "CE1Dourlens\CE1_2.jpg",
@@ -115,7 +115,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CE12"){
 
             $className="CE1 et CE2";
-            $color = $elementaire;
+            $level = "elementaire";
             $img=[
                 "CE1CE2Dartois\CE1CE2_1.jpg",
                 "CE1CE2Dartois\CE1CE2_2.jpg",
@@ -129,7 +129,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CE2"){
 
             $className="CE2";
-            $color = $elementaire;
+            $level = "elementaire";
             $img=[
                 "CE2Tilloy\CE2_1.jpg",
                 "CE2Tilloy\CE2_2.jpg",
@@ -143,7 +143,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CM1"){
 
             $className="CM1";
-            $color = $moyen;
+            $level = "moyen";
             $img=[
                 "CM1Bossuwe\CM1_1.jpg"
             ];
@@ -152,7 +152,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CM12"){
 
             $className="CM1 et CM2";
-            $color = $moyen;
+            $level = "moyen";
             $img=[
                 "CM1CM2Duhamel\CM1CM2_1.jpg",
                 "CM1CM2Duhamel\CM1CM2_2.jpg",
@@ -164,7 +164,7 @@ class ClasseController extends AbstractController
         } else if ($class=="CM2"){
 
             $className="CM2";
-            $color = $moyen;
+            $level = "moyen";
             $img=[
                 "CM2Cazer\CM2_1.jpg",
                 "CM2Cazer\CM2_2.jpg",
@@ -175,6 +175,16 @@ class ClasseController extends AbstractController
 
         } else {
             return $this->redirectToRoute('classes');
+        }
+
+        if($level=="maternelle"){
+            $color=$maternelle;
+        } else if ($level=="preparatoire"){
+            $color=$preparatoire;
+        } else if ($level=="elementaire"){
+            $color=$elementaire;
+        } else {
+            $color=$moyen;
         }
 
         return $this->render('classe/classe.html.twig', [
