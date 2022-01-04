@@ -12,7 +12,7 @@ class PresentationController extends AbstractController
     public function index(): Response
     {
         $img=[
-            "CoursRecre\Maternelle\CoursMaternelle1.jpg",
+            "CoursRecre\Primaire\CoursPrimaire2.jpg",
             "SalleRestauration\Maternelle\cantinePetits2.jpg",
             "SalleRestauration\Primaire\cantine1.jpg",
             "MobiliterReduite\mobilité.png",
