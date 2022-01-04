@@ -43,7 +43,7 @@ class ClasseController extends AbstractController
                 "PSMSCandelier\PSMS_5.jpg",
                 "PSMSCandelier\PSMS_6.jpg"
             ];
-            $listeProfs="Mmes Candelier et Guffroy";
+            $listeProfs="Mmes Candelier et Guffroy et Mme Delphine (ASEM)";
 
         } else if ($class=="MS"){
 
