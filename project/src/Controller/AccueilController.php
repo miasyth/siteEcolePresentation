@@ -20,7 +20,7 @@ class AccueilController extends AbstractController
             "Garderie\garderie4.jpg",
             "CoursRecre\Maternelle\CoursMaternelle3.jpg",
             "CoursRecre\Primaire\CoursPrimaire1.jpeg",
-            "CoursRecre\Primaire\CoursPrimaire5.jpeg",
+            "CoursRecre\Primaire\CoursPrimaire5.jpg",
             "EntreEcoleCP\Facebook.jpg",
             "Biblio\Biblio1.jpeg"
         ];
