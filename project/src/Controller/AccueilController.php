@@ -15,11 +15,12 @@ class AccueilController extends AbstractController
             "Facade\Façade1.jpeg",
             "LogoEcole\logoecole.png",
             "SalleMotricite\SalleMotricite1.jpg",
-            "SalleRestauration\Maternelle\cantinePetits2.jpg",
+            "Classes\TPSPSBulteau\TPSPS_7.jpg",
             "SalleRestauration\Primaire\cantine1.jpg",
             "Garderie\garderie4.jpg",
             "CoursRecre\Maternelle\CoursMaternelle3.jpg",
             "CoursRecre\Primaire\CoursPrimaire1.jpeg",
+            "EntreEcoleCP\Facebook.jpg",
             "Biblio\Biblio1.jpeg"
         ];
 
