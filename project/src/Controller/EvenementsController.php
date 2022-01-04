@@ -44,7 +44,7 @@ class EvenementsController extends AbstractController
             ]
         ];
 
-        return $this->render('evenements/evenements.html.twig', [
+        return $this->render('inConstruction.html.twig', [
             'evenements' => $evenements,
         ]);
     }
