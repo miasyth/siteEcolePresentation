@@ -145,7 +145,10 @@ class ClasseController extends AbstractController
             $className="CM1";
             $level = "moyen";
             $img=[
-                "CM1Bossuwe\CM1_1.jpg"
+                "CM1Bossuwe\CM1_1.jpg",
+                "CM1Bossuwe\CM1_2.jpg",
+                "CM1Bossuwe\CM1_3.jpg",
+                "CM1Bossuwe\CM1_4.jpg",
             ];
             $listeProfs="M Bossuwe";
 
