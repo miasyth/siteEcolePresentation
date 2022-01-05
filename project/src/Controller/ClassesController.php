@@ -19,7 +19,7 @@ class ClassesController extends AbstractController
             ],
             [
                 'link'=>'PS-MS',
-                'htmlDesc'=>['PS et MS','Mmes Candelier et Guffroy'],
+                'htmlDesc'=>['PS et MS','Mmes Candelier, Guffroy et Delphine'],
                 'illu'=>'PSMSCandelier\PSMS_illu.jpg'
             ],
             [
