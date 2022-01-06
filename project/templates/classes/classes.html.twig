@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Classes{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div>
+            <h4>Classes</h4>
+
+            <hr width="20%" color= "#82b442" align="left">
+
+            {% block listeClasses %}
+
+                <div class="listeClasse">
+
+                {% for classe in classes %}
+                    <a class="classe" href='/classe/{{classe.link}}'>
+                        <div>
+                            <p class='className'>Classe de {{classe.htmlDesc.0}}<br>{{classe.htmlDesc.1}}
+                        </div>
+                        <img src="img\Classes\{{classe.illu}}">
+                    </a>
+                {% endfor %}
+
+                </div>
+
+            {% endblock %}
+
+        </div>
+    </div>
+
+{% endblock %}

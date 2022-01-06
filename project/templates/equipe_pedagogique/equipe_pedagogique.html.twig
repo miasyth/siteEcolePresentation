@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Equipe Pédagogique{% endblock %}
+
+{% block body  %}
+
+    <div class= "container">
+        <div>
+            <h4>Équipe pédagogique</h4>
+
+            <hr width="20%" color= "#ea7d44" align="left">
+
+            <p>
+                <img src="img\Equipe\{{imgEquipe}}" id="equipePeda">
+            </p>
+
+            <div>
+                <p>
+                    En partant du second rang, de gauche à droite, nous avons:
+                </p>
+                <p class="listEquipe">
+                    {{rangs[0]}}
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    Et au premier rang de gauche à droite également, nous avons:
+                </p>
+                <p class="listEquipe">
+                    {{rangs[1]}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

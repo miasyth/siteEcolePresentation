@@ -1,0 +1,600 @@
+/*   Font   */
+
+* {
+    font-family: Verdana, sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/*____________________________________________________________*/
+
+/*   HEADER   */
+
+header { 
+    min-height: 15%;
+}
+
+.horizontal {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(216, 216, 216);
+}
+
+.horizontal div {
+    padding-left: 7%;
+}
+
+.presentation a {
+    color: #40a4bc;
+}
+
+.classes a {
+    color: #82b442;
+}
+
+.equipe a {
+    color: #ea7d44;
+}
+
+.evenements a {
+    color: #b1434a;
+}
+
+.connexion {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 2;
+    margin-right: 40px
+}
+
+.connexion a {
+    color: white; /* switch to black once user control is functional */
+}
+
+#logoecole {
+    width: 200px;
+}
+
+@media (max-width: 1190px) {
+    .horizontal {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .horizontal div {
+        padding-left: 0px;
+        padding-top: 5px;
+    }
+
+    .connexion {
+        margin-right: 0px;
+    }
+}
+
+/*____________________________________________________________*/
+
+/*    BODY    */
+
+body{
+    margin: unset;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: 100%;
+}
+
+.background{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nobackground {
+    background: white;
+}
+
+/*____________________________________________________________*/
+
+/*    SOCIAL BAR / Perm_content   */
+
+#gmaps {
+    border: 0;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.map-marker {
+    background: red;
+    color: white;
+}
+
+.envelope {
+    background: grey;
+    color: white;
+}
+
+/*____________________________________________________________*/
+
+/*   Containers   */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    position: relative;
+}
+
+/*____________________________________________________________*/
+
+/*   carrousel  */
+
+.image_accueil{
+    height: 400px;
+}
+
+.image_presentation {
+    height: 400px;
+}
+
+.image_classe {
+    height: 400px;
+}
+
+.image_event{
+    height: 400px;
+}
+
+.image_carrousel{
+    height: 400px;
+}
+
+.image_3carrousel{
+    height: 250px;
+}
+
+.slideshow-container3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1450px) {
+    .slideshow-container3{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+.slideshow-container3 .mySlides,
+.slideshow-container .mySlides{
+    text-align: center;
+}
+
+.mySlides { /* Hide the images by default */
+    display: none;
+}
+
+.cursor { /* Add a pointer when hovering over the thumbnail images */
+    cursor: pointer;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column { /* Six columns side by side */
+    float: left;
+    width: 16.66%;
+}
+
+/*____________________________________________________________*/
+
+/*   Accueil   */
+
+.horaire {
+    text-align: center;
+    padding-right: -10%;
+    padding-left: -10%;
+}
+.Titre_horaire{
+    background-color: #C4C4C4;
+}
+.blockHoraires {
+    display: flex;
+    justify-content: space-around;
+    background: none;
+    width: 100%;
+}
+
+#listHoraires {
+    width: 50%;
+}
+
+#listHoraires div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    #listHoraires div {
+        flex-direction: column;
+    }
+}
+
+.maps {
+    background-color: #C4C4C4;
+    text-align: center;
+}
+
+hr {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+#gmaps {
+    border: 0;
+}
+
+.coordonnees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.coordonnees i {
+    color: black;
+}
+
+.contact {
+    background-color: #C4C4C4;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-block-start: 0em;
+}
+
+.listInput {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input_form {
+    width: 60%;
+}
+
+.input_form .fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1250px) {
+    .input_form .fields {
+        flex-direction: column;
+    }
+}
+
+#Nom,
+#Email,
+#Objet {
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+#textarea {
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.btn_form{
+    text-align: right;
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#btn_contact {
+    height: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*____________________________________________________________*/
+
+/*    Présentation   */
+
+.presentatition_ecole{
+    text-align: center;
+}
+
+.div_presentation{
+    text-align: center;
+}
+.div_presentation a{
+    color: black;
+    font-weight: bold;
+}
+.div_presentation hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.Volet_Pastoral label {
+    font-weight: bold;
+}
+
+.Reglement_interieur {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.Projet_éducatif{
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+/*____________________________________________________________*/
+
+/*   Classes   */
+
+a.classe div{
+    padding-top: 25px;
+    margin-top: 1em;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black ;
+}
+
+a.classe {
+    text-decoration: none;
+}
+
+a.classe img{
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 400px;
+}
+
+.titre {
+    text-align: center;
+    color: #2F2C2C;
+}
+
+.listeClasse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+.className {
+    background-color: black;
+    color: white;
+    margin-block-end: 0em;
+    width: 380;
+}
+
+a.retour {
+    text-decoration: none;
+    color: black;
+}
+
+/*____________________________________________________________*/
+
+/*   Equipe pedagogique   */
+
+#equipePeda { /* taille image equipe pedagogique */
+    width: 100%;
+}
+
+.listEquipe{
+    margin-left: 20px;
+}
+
+/*____________________________________________________________*/
+
+/*   Evenements   */
+
+a.evenement div{
+    padding-top: 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 20px;
+    text-align: center;
+    color: black ;
+}
+
+a.evenement *{
+    width: 400px;
+}
+
+a.evenement {
+    text-decoration: none;
+}
+
+a.evenement img{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.titre_event {
+    text-align: center;
+    color: #0f0f0f;
+}
+
+.listeEvenement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+.Carnaval {
+    color: #40a4bc;
+}
+
+.Noël {
+    color: #82b442;
+}
+
+.Ceremonie {
+    color: #ea7d44;
+}
+
+.PorteOuverte {
+    color: #b1434a;
+}
+
+.RencontreSportive {
+    color: #3B5998;
+}
+
+a.retour {
+    text-decoration: none;
+    color: black;
+}
+
+/*____________________________________________________________*/
+
+/* Connexion  */
+
+#Form_connexion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-right: 40%;
+}
+
+#Form_connexion input{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#btn_connexion {
+    border-radius: 8px;
+    width: 90px;
+    align-self: center;
+}
+
+/*____________________________________________________________*/
+
+/* Mentions légales */
+
+.mentions-container {
+    margin: 1em auto; 
+    max-width: 800px; 
+    width: 95%; 
+    font: 18px/1.5 sans-serif;
+} 
+
+.mentions-container code {
+    background: #F5F5F5; 
+    padding: 2px 6px; 
+}
+
+/*____________________________________________________________*/
+
+/*   FOOTER   */
+
+footer {
+    background-color: #2F2C2C;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    min-height: 15%;
+}
+
+.footer {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer div {
+    padding-left: 3%;
+}
+
+.mentions {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 5%;
+    flex-grow: 2;
+}
+
+footer a {
+    text-decoration: unset;
+    color: unset;
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div {
+        padding-left: 0px;
+        padding-bottom: 5px;
+    }
+
+    .mentions {
+        flex-direction: row;
+        margin-right: 0px;
+    }
+}
+
+/*____________________________________________________________*/

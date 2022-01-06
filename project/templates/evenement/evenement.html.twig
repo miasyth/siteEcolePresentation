@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+    
+{% block title %}{{event}}{% endblock %} {# insert of title (3 letters id) #}
+
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="../favicon.png">
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{ '../css/style.css' }}"/>
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="container">
+        <div>
+            <br>
+            <a href="/evenements" class="retour"><- Retour</a>
+            <br>
+            <h4>{% block nomEvenement %}Evenement {{nomEvenement}}{% endblock %}</h4> {# insert of event name (full desc) #}
+
+            <hr width="20%" color= "#b1434a" align="left">
+            <br>
+
+            {# block carrousel #}
+            {% if img[1] is defined %}
+                <div class="slideshow-container">
+
+            {% for image in img %}
+                    <div class="mySlides">
+                        <img class="image_carrousel" src="..\img\Evenement\{{image}}" onmouseover="" onmouseout="">
+                    </div>
+            {% endfor %}
+
+                </div>
+            
+            {% else %}
+                <img class="image_presentation" src="..\img\Evenement\{{img[0]}}">
+            {% endif %}
+            {# endblock #}
+
+            <br>
+
+            {# block newsEvenemente#}
+
+                <h4>Texte:</h4>
+                <p>Exemple de texte de description de l'événement</p>
+
+            {# endblock #}
+
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block javascripts %}
+    {% if img[1] is defined %}
+        <script type="text/javascript" src="../js/carrousel/autoCarrousel.js"></script>
+    {% endif %}
+    <script type="text/javascript" src="../js/classe/background.js"></script>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{# page title #}{% endblock %}
+
+{# if you use specific CSS:
+{% block style %}
+{% endblock %}
+#}
+
+{# if you want to use the admin header:
+{% block header %}
+    {% include "/HeaderAdmin.html.php" %}
+{% endblock %}
+#}
+
+{% block body  %}
+
+    <div class= "container">
+        <div>
+            <h4>{# title of container #}</h4>
+
+            <hr width="20%" color= "{# color of folder #}" align="left">
+            
+            {# Main content of page goes here #}
+                
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{# if you want to use a different footer:
+{% block footer %}
+    {% include "/FooterAUTRE.html.php" %}
+{% endblock %}
+#}
+
+{# if you use specific JS:
+{% block javascripts %}
+    <script type="text/javascript" src="js/FILENAME.js"></script>
+{% endblock %}
+#}

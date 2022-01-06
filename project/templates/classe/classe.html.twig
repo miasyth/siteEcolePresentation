@@ -1,0 +1,138 @@
+{% extends 'base.html.twig' %}
+    
+{% block title %}{{class}}{% endblock %} {# insert of title (3 letters id) #}
+
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="../favicon.png">
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{ '../css/style.css' }}"/>
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="container">
+        <br>
+        <a href="/classes" class="retour"><- Retour</a>
+        <br>
+        <h4>{% block nomClasse %}Classe de {{className}}{% endblock %}</h4> {# insert of class name (full desc) #}
+
+        <hr width="20%" color= "{{color}}" align="left">
+        <br>
+
+        {# block carrousel #}
+        {% if img[1] is defined %}
+            <div class="slideshow-container">
+
+        {% for image in img %}
+                <div class="mySlides">
+                    <img class="image_carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
+                </div>
+        {% endfor %}
+
+            </div>
+        
+        {% else %}
+            <img class="image_classe" src="..\img\Classes\{{img[0]}}">
+        {% endif %}
+        {# endblock #}
+
+        <br>
+
+        {# block profs#}
+
+            <h4>Enseignant(e/s/es):</h4>
+            <p>{{listeProfs}}</p>
+
+        {# endblock #}{# block newsClasse#}
+
+            <h4>News:</h4>
+            <p>Exemple de texte de description de classe</p>
+
+            {# block carrousel #}
+            {% if img[1] is defined %}
+                <div class="slideshow-container">
+
+            {% for image in img %}
+                    <div class="mySlides">
+                        <img class="image_carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
+                    </div>
+            {% endfor %}
+
+                </div>
+            
+            {% else %}
+                <img class="image_carrousel" src="..\img\Classes\{{img[0]}}">
+            {% endif %}
+            {# endblock #}
+
+            <br>
+
+        {# endblock #}
+
+        {# block newsClasse#}
+
+            <h4>Texte:</h4>
+            <p>Exemple de texte de description de classe</p>
+
+            {# block carrousel3 #}
+            {% if img[2] is defined %}
+                <div class="slideshow-container3">
+
+            {% for image in img %}
+                    <div class="mySlides">
+                        <img class="image_3carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
+                    </div>
+            {% endfor %}
+
+                </div>
+            
+            {% else %}
+                <img class="image_3carrousel" src="..\img\Classes\{{img[0]}}">
+            {% endif %}
+            {# endblock #}
+
+            <br>
+
+        {# endblock #}
+
+        {# block newsClasse#}
+
+            <h4>Texte:</h4>
+            <p>Exemple de texte de description de classe</p>
+
+            {# block carrousel3 #}
+            {% if img[2] is defined %}
+                <div class="slideshow-container3">
+
+            {% for image in img %}
+                    <div class="mySlides">
+                        <img class="image_3carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
+                    </div>
+            {% endfor %}
+
+                </div>
+            
+            {% else %}
+                <img class="image_3carrousel" src="..\img\Classes\{{img[0]}}">
+            {% endif %}
+            {# endblock #}
+
+            <br>
+
+        {# endblock #}
+    </div>
+
+{% endblock %}
+
+
+{% block javascripts %}
+    {% if img[1] is defined %}
+        <script type="text/javascript" src="../js/carrousel/autoCarrousel.js"></script>
+        <script type="text/javascript" src="../js/carrousel/auto3Carrousel.js"></script>
+    {% endif %}
+    <script type="text/javascript" src="../js/classe/background.js"></script>
+{% endblock %}
