@@ -545,6 +545,18 @@ a.retour {
 
 /*____________________________________________________________*/
 
+/* inConstruction  */
+
+.imgConstruct {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+/*____________________________________________________________*/
+
 /*   FOOTER   */
 
 footer {
