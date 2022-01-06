@@ -551,13 +551,13 @@ a.retour {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15%;
-    margin-bottom: 15%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .imgConstruct {
     width: 300px;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 /*____________________________________________________________*/
