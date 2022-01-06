@@ -42,88 +42,13 @@
 
         <br>
 
-        {# block profs#}
+        {# block profs #}
 
             <h4>Enseignant(e/s/es):</h4>
             <p>{{listeProfs}}</p>
 
-        {# endblock #}{# block newsClasse#}
-
-            <h4>News:</h4>
-            <p>Exemple de texte de description de classe</p>
-
-            {# block carrousel #}
-            {% if img[1] is defined %}
-                <div class="slideshow-container">
-
-            {% for image in img %}
-                    <div class="mySlides">
-                        <img class="image_carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
-                    </div>
-            {% endfor %}
-
-                </div>
-            
-            {% else %}
-                <img class="image_carrousel" src="..\img\Classes\{{img[0]}}">
-            {% endif %}
-            {# endblock #}
-
-            <br>
-
         {# endblock #}
-
-        {# block newsClasse#}
-
-            <h4>Texte:</h4>
-            <p>Exemple de texte de description de classe</p>
-
-            {# block carrousel3 #}
-            {% if img[2] is defined %}
-                <div class="slideshow-container3">
-
-            {% for image in img %}
-                    <div class="mySlides">
-                        <img class="image_3carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
-                    </div>
-            {% endfor %}
-
-                </div>
-            
-            {% else %}
-                <img class="image_3carrousel" src="..\img\Classes\{{img[0]}}">
-            {% endif %}
-            {# endblock #}
-
-            <br>
-
-        {# endblock #}
-
-        {# block newsClasse#}
-
-            <h4>Texte:</h4>
-            <p>Exemple de texte de description de classe</p>
-
-            {# block carrousel3 #}
-            {% if img[2] is defined %}
-                <div class="slideshow-container3">
-
-            {% for image in img %}
-                    <div class="mySlides">
-                        <img class="image_3carrousel" src="..\img\Classes\{{image}}" onmouseover="" onmouseout="">
-                    </div>
-            {% endfor %}
-
-                </div>
-            
-            {% else %}
-                <img class="image_3carrousel" src="..\img\Classes\{{img[0]}}">
-            {% endif %}
-            {# endblock #}
-
-            <br>
-
-        {# endblock #}
+        
     </div>
 
 {% endblock %}

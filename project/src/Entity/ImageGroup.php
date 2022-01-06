@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\VideoRepository;
+use App\Repository\ImageGroupRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=VideoRepository::class)
+ * @ORM\Entity(repositoryClass=ImageGroupRepository::class)
  */
-class Video
+class ImageGroup
 {
     /**
      * @ORM\Id
@@ -25,12 +25,7 @@ class Video
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $name;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $url;
+    private $type;
 
     public function getId(): ?int
     {
@@ -49,26 +44,14 @@ class Video
         return $this;
     }
 
-    public function getName(): ?string
+    public function getType(): ?string
     {
-        return $this->name;
+        return $this->type;
     }
 
-    public function setName(?string $name): self
+    public function setType(?string $type): self
     {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    public function getUrl(): ?string
-    {
-        return $this->url;
-    }
-
-    public function setUrl(?string $url): self
-    {
-        $this->url = $url;
+        $this->type = $type;
 
         return $this;
     }

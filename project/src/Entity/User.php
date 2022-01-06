@@ -2,7 +2,7 @@
 
 namespace App\Entity;
 
-use App\Repository\UserRepository;
+use App\Repository\UsersRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -18,24 +18,19 @@ class User
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $username;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $password;
 
     /**
-     * @ORM\Column(type="array")
+     * @ORM\Column(type="boolean", nullable=true)
      */
-    private $role = ["Admin"=>false, "Prof"=>false];
-
-    /**
-     * @ORM\OneToOne(targetEntity=Utilisateur::class, cascade={"persist", "remove"})
-     */
-    private $utilisateur;
+    private $admin;
 
     public function getId(): ?int
     {
@@ -47,7 +42,7 @@ class User
         return $this->username;
     }
 
-    public function setUsername(string $username): self
+    public function setUsername(?string $username): self
     {
         $this->username = $username;
 
@@ -59,33 +54,21 @@ class User
         return $this->password;
     }
 
-    public function setPassword(string $password): self
+    public function setPassword(?string $password): self
     {
         $this->password = $password;
 
         return $this;
     }
 
-    public function getRole(): ?array
+    public function getAdmin(): ?bool
     {
-        return $this->role;
+        return $this->admin;
     }
 
-    public function setRole(array $role): self
+    public function setAdmin(?bool $admin): self
     {
-        $this->role = $role;
-
-        return $this;
-    }
-
-    public function getUtilisateur(): ?Utilisateur
-    {
-        return $this->utilisateur;
-    }
-
-    public function setUtilisateur(?Utilisateur $utilisateur): self
-    {
-        $this->utilisateur = $utilisateur;
+        $this->admin = $admin;
 
         return $this;
     }

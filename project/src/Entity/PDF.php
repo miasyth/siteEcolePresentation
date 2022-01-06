@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\VideoRepository;
+use App\Repository\PDFRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=VideoRepository::class)
+ * @ORM\Entity(repositoryClass=PDFRepository::class)
  */
-class Video
+class PDF
 {
     /**
      * @ORM\Id
@@ -16,6 +16,11 @@ class Video
      * @ORM\Column(type="integer")
      */
     private $id;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $pres;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
@@ -35,6 +40,18 @@ class Video
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getPres(): ?bool
+    {
+        return $this->pres;
+    }
+
+    public function setPres(?bool $pres): self
+    {
+        $this->pres = $pres;
+
+        return $this;
     }
 
     public function getOrdre(): ?int

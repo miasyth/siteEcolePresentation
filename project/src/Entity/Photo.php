@@ -18,33 +18,69 @@ class Photo
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $accueil;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $presentation;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $ordre;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $name;
 
     /**
-     * @ORM\Column(type="date")
-     */
-    private $date;
-
-    /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $url;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=News::class, inversedBy="photos")
-     */
-    private $news;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="photos")
-     */
-    private $classe;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getAccueil(): ?bool
+    {
+        return $this->accueil;
+    }
+
+    public function setAccueil(?bool $accueil): self
+    {
+        $this->accueil = $accueil;
+
+        return $this;
+    }
+
+    public function getPresentation(): ?bool
+    {
+        return $this->presentation;
+    }
+
+    public function setPresentation(?bool $presentation): self
+    {
+        $this->presentation = $presentation;
+
+        return $this;
+    }
+
+    public function getOrdre(): ?int
+    {
+        return $this->ordre;
+    }
+
+    public function setOrdre(?int $ordre): self
+    {
+        $this->ordre = $ordre;
+
+        return $this;
     }
 
     public function getName(): ?string
@@ -52,21 +88,9 @@ class Photo
         return $this->name;
     }
 
-    public function setName(string $name): self
+    public function setName(?string $name): self
     {
         $this->name = $name;
-
-        return $this;
-    }
-
-    public function getDate(): ?\DateTimeInterface
-    {
-        return $this->date;
-    }
-
-    public function setDate(\DateTimeInterface $date): self
-    {
-        $this->date = $date;
 
         return $this;
     }
@@ -76,33 +100,9 @@ class Photo
         return $this->url;
     }
 
-    public function setUrl(string $url): self
+    public function setUrl(?string $url): self
     {
         $this->url = $url;
-
-        return $this;
-    }
-
-    public function getNews(): ?News
-    {
-        return $this->news;
-    }
-
-    public function setNews(?News $news): self
-    {
-        $this->news = $news;
-
-        return $this;
-    }
-
-    public function getClasse(): ?Classe
-    {
-        return $this->classe;
-    }
-
-    public function setClasse(?Classe $classe): self
-    {
-        $this->classe = $classe;
 
         return $this;
     }

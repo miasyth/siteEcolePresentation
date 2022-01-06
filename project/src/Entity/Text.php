@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\UtilisateurRepository;
+use App\Repository\TextRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=UtilisateurRepository::class)
+ * @ORM\Entity(repositoryClass=TextRepository::class)
  */
-class Utilisateur
+class Text
 {
     /**
      * @ORM\Id
@@ -18,28 +18,33 @@ class Utilisateur
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="integer", nullable=true)
      */
-    private $civilite;
+    private $ordre;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $name;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $text;
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getCivilite(): ?string
+    public function getOrdre(): ?int
     {
-        return $this->civilite;
+        return $this->ordre;
     }
 
-    public function setCivilite(?string $civilite): self
+    public function setOrdre(?int $ordre): self
     {
-        $this->civilite = $civilite;
+        $this->ordre = $ordre;
 
         return $this;
     }
@@ -52,6 +57,18 @@ class Utilisateur
     public function setName(?string $name): self
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getText(): ?string
+    {
+        return $this->text;
+    }
+
+    public function setText(?string $text): self
+    {
+        $this->text = $text;
 
         return $this;
     }
