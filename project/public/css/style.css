@@ -547,11 +547,16 @@ a.retour {
 
 /* inConstruction  */
 
-.imgConstruct {
+.construction {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    align-items: center;
     margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.imgConstruct {
+    width: 300px;
     margin-bottom: 15%;
 }
 
