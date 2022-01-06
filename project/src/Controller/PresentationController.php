@@ -20,7 +20,7 @@ class PresentationController extends AbstractController
         ];
         $reglement="reglement_interieur_de_lecole_sainte_marie_de_la_presentation.pdf";
         $projetEducatif="Projet_éducatif.pdf";
-        $voletPastoral="MUST ADD WHEN RECEIVED";
+        $voletPastoral="voletpastoral.pdf";
 
         return $this->render('/presentation/presentation.html.twig', [
             'img' => $img,
