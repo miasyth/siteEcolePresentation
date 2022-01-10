@@ -8,8 +8,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AccueilController extends AbstractController
 {
-    #[Route('/accueil', name: 'accueil')]
-    public function index(): Response
+    #[Route('/', name: 'accueil')]
+    public function indexAux(): Response
     {
         $img=[
             "Facade\Façade1.jpeg",
@@ -29,11 +29,5 @@ class AccueilController extends AbstractController
             'controller_name' => 'AccueilController',
             'img' => $img,
         ]);
-    }
-
-    #[Route('/', name: 'accueilAuxiliary')]
-    public function indexAux(): Response
-    {
-        return $this->index();
     }
 }
