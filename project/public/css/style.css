@@ -615,3 +615,19 @@ footer a {
 }
 
 /*____________________________________________________________*/
+
+/*    Admin   */
+
+.btn_form_admin{
+    text-align: left;
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#btn {
+    height: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
