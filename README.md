@@ -4,9 +4,9 @@ Site de l'école **La Présentation**.
 
 ## Instructions d'installation du projet
 
--dans le dossier "*project*",
-  faites une copie du fichier "*template.env*" et renommez le nouveau fichier "*.env*".
-  lancez le terminal et executez la commande "*composer install*".
+-dans le dossier "*project*":
+  - faites une copie du fichier "*template.env*" et renommez le nouveau fichier "*.env*".
+  - lancez le terminal et executez la commande "*composer install*".
 
 ## Trello
 
