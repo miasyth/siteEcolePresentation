@@ -1,5 +1,5 @@
 const today = new Date();
-const date = {jour:25,mois:6}; //{jour:today.getDate(),mois:(today.getMonth()+1)};
+const date = {jour:25,mois:9}; //{jour:today.getDate(),mois:(today.getMonth()+1)};
 const spring = {jour:20,mois:3};
 const summer = {jour:21,mois:6};
 const autumn = {jour:23,mois:9};
