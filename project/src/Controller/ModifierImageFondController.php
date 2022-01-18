@@ -8,10 +8,10 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ModifierImageFondController extends AbstractController
 {
-    #[Route('/modifier/image/fond', name: 'modifier_image_fond')]
+    #[Route('/modifier_image_fond', name: 'modifier_image_fond')]
     public function index(): Response
     {
-        return $this->render('modifier_image_fond/index.html.twig', [
+        return $this->render('modifier_image_fond/ModifierFond.html.twig', [
             'controller_name' => 'ModifierImageFondController',
         ]);
     }
