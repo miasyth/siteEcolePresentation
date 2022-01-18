@@ -37,6 +37,11 @@ class PDF
      */
     private $url;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=News::class, inversedBy="pDFs")
+     */
+    private $news;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class PDF
     public function setUrl(?string $url): self
     {
         $this->url = $url;
+
+        return $this;
+    }
+
+    public function getNews(): ?News
+    {
+        return $this->news;
+    }
+
+    public function setNews(?News $news): self
+    {
+        $this->news = $news;
 
         return $this;
     }

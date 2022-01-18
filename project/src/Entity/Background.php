@@ -22,6 +22,11 @@ class Background
      */
     private $name;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Photo::class, cascade={"persist", "remove"})
+     */
+    private $photo;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +40,18 @@ class Background
     public function setName(?string $name): self
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getPhoto(): ?Photo
+    {
+        return $this->photo;
+    }
+
+    public function setPhoto(?Photo $photo): self
+    {
+        $this->photo = $photo;
 
         return $this;
     }

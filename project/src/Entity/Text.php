@@ -32,6 +32,11 @@ class Text
      */
     private $text;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=News::class, inversedBy="texts")
+     */
+    private $news;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +74,18 @@ class Text
     public function setText(?string $text): self
     {
         $this->text = $text;
+
+        return $this;
+    }
+
+    public function getNews(): ?News
+    {
+        return $this->news;
+    }
+
+    public function setNews(?News $news): self
+    {
+        $this->news = $news;
 
         return $this;
     }

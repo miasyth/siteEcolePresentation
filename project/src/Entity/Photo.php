@@ -42,6 +42,16 @@ class Photo
      */
     private $url;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=ImageGroup::class, inversedBy="photos")
+     */
+    private $imageGroup;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="photos")
+     */
+    private $classe;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -103,6 +113,30 @@ class Photo
     public function setUrl(?string $url): self
     {
         $this->url = $url;
+
+        return $this;
+    }
+
+    public function getImageGroup(): ?ImageGroup
+    {
+        return $this->imageGroup;
+    }
+
+    public function setImageGroup(?ImageGroup $imageGroup): self
+    {
+        $this->imageGroup = $imageGroup;
+
+        return $this;
+    }
+
+    public function getClasse(): ?Classe
+    {
+        return $this->classe;
+    }
+
+    public function setClasse(?Classe $classe): self
+    {
+        $this->classe = $classe;
 
         return $this;
     }

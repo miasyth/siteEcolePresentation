@@ -48,6 +48,11 @@ class User
      */
     private $name;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="users")
+     */
+    private $classe;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -147,5 +152,17 @@ class User
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getClasse(): ?Classe
+    {
+        return $this->classe;
+    }
+
+    public function setClasse(?Classe $classe): self
+    {
+        $this->classe = $classe;
+
+        return $this;
     }
 }

@@ -17,8 +17,25 @@ class Presentation
      */
     private $id;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Text::class, cascade={"persist", "remove"})
+     */
+    private $text;
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getText(): ?Text
+    {
+        return $this->text;
+    }
+
+    public function setText(?Text $text): self
+    {
+        $this->text = $text;
+
+        return $this;
     }
 }
