@@ -6,9 +6,16 @@ use App\Repository\ImageGroupRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=ImageGroupRepository::class)
+ * @ApiResource( 
+ *     normalizationContext={"groups"={"imagegroup:read"}},
+ *     denormalizationContext={"groups"={"imagegroup:write"}},
+ *     itemOperations={"put","get","delete"}
+ * )
  */
 class ImageGroup
 {
@@ -16,26 +23,31 @@ class ImageGroup
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"imagegroup:read","imagegroup:write"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Groups({"imagegroup:read","imagegroup:write"})
      */
     private $ordre;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"imagegroup:read","imagegroup:write"})
      */
     private $type;
 
     /**
      * @ORM\ManyToOne(targetEntity=News::class, inversedBy="imageGroups")
+     * @Groups({"imagegroup:read","imagegroup:write"})
      */
     private $news;
 
     /**
      * @ORM\OneToMany(targetEntity=Photo::class, mappedBy="imageGroup")
+     * @Groups({"imagegroup:read","imagegroup:write"})
      */
     private $photos;
 

@@ -4,9 +4,16 @@ namespace App\Entity;
 
 use App\Repository\PhotoRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=PhotoRepository::class)
+ * @ApiResource( 
+ *     normalizationContext={"groups"={"photo:read"}},
+ *     denormalizationContext={"groups"={"photo:write"}},
+ *     itemOperations={"put","get","delete"}
+ * )
  */
 class Photo
 {
@@ -14,41 +21,49 @@ class Photo
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"photo:read","photo:write"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
+     * @Groups({"photo:read","photo:write"})
      */
     private $accueil;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
+     * @Groups({"photo:read","photo:write"})
      */
     private $presentation;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Groups({"photo:read","photo:write"})
      */
     private $ordre;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"photo:read","photo:write"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"photo:read","photo:write"})
      */
     private $url;
 
     /**
      * @ORM\ManyToOne(targetEntity=ImageGroup::class, inversedBy="photos")
+     * @Groups({"photo:read","photo:write"})
      */
     private $imageGroup;
 
     /**
      * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="photos")
+     * @Groups({"photo:read","photo:write"})
      */
     private $classe;
 

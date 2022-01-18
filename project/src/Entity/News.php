@@ -6,9 +6,16 @@ use App\Repository\NewsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=NewsRepository::class)
+ * @ApiResource( 
+ *     normalizationContext={"groups"={"news:read"}},
+ *     denormalizationContext={"groups"={"news:write"}},
+ *     itemOperations={"put","get","delete"}
+ * )
  */
 class News
 {
@@ -16,51 +23,61 @@ class News
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"news:read","news:write"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
+     * @Groups({"news:read","news:write"})
      */
     private $contenuClasse;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"news:read","news:write"})
      */
     private $title;
 
     /**
      * @ORM\Column(type="date", nullable=true)
+     * @Groups({"news:read","news:write"})
      */
     private $date;
 
     /**
      * @ORM\OneToMany(targetEntity=Video::class, mappedBy="news")
+     * @Groups({"news:read","news:write"})
      */
     private $videos;
 
     /**
      * @ORM\OneToMany(targetEntity=Text::class, mappedBy="news")
+     * @Groups({"news:read","news:write"})
      */
     private $texts;
 
     /**
      * @ORM\OneToMany(targetEntity=PDF::class, mappedBy="news")
+     * @Groups({"news:read","news:write"})
      */
     private $pDFs;
 
     /**
      * @ORM\OneToMany(targetEntity=ImageGroup::class, mappedBy="news")
+     * @Groups({"news:read","news:write"})
      */
     private $imageGroups;
 
     /**
      * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="news")
+     * @Groups({"news:read","news:write"})
      */
     private $classe;
 
     /**
      * @ORM\OneToOne(targetEntity=Photo::class, cascade={"persist", "remove"})
+     * @Groups({"news:read","news:write"})
      */
     private $photo;
 

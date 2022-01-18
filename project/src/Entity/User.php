@@ -4,9 +4,16 @@ namespace App\Entity;
 
 use App\Repository\UsersRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @ApiResource( 
+ *     normalizationContext={"groups"={"user:read"}},
+ *     denormalizationContext={"groups"={"user:write"}},
+ *     itemOperations={"put","get","delete"}
+ * )
  */
 class User
 {
@@ -14,42 +21,44 @@ class User
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"user:read","user:write"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"user:read","user:write"})
      */
     private $username;
 
     /**
      * @var string The hashed password
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"user:read","user:write"})
      */
     private $password;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
-    private $admin;
-
-    /**
-     * @ORM\Column(type="json", nullable=true)
-     */
-    private $roles = [];
-
-    /**
+        /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"user:read","user:write"})
      */
     private $civilite;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"user:read","user:write"})
      */
     private $name;
 
     /**
+     * @ORM\Column(type="boolean", nullable=true)
+     * @Groups({"user:read","user:write"})
+     */
+    private $admin;
+
+    /**
      * @ORM\ManyToOne(targetEntity=Classe::class, inversedBy="users")
+     * @Groups({"user:read","user:write"})
      */
     private $classe;
 
@@ -94,18 +103,6 @@ class User
     public function setAdmin(?bool $admin): self
     {
         $this->admin = $admin;
-
-        return $this;
-    }
-
-    public function getRoles(): ?array
-    {
-        return $this->roles;
-    }
-
-    public function setRoles(?array $roles): self
-    {
-        $this->roles = $roles;
 
         return $this;
     }
