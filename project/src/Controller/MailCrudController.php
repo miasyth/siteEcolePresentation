@@ -1,6 +1,6 @@
 <?php
 
-namespace Mail;
+namespace App\Controller;
 
 use App\Entity\Mail;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

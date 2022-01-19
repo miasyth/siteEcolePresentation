@@ -1,6 +1,6 @@
 <?php
 
-namespace Background;
+namespace App\Controller;
 
 use App\Entity\Background;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

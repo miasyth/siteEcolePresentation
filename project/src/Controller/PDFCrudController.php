@@ -1,6 +1,6 @@
 <?php
 
-namespace PDF;
+namespace App\Controller;
 
 use App\Entity\PDF;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

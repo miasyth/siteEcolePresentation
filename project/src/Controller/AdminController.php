@@ -44,7 +44,7 @@ class AdminController extends AbstractDashboardController
     {
         yield MenuItem::linktoRoute('Home', 'fas fa-home', 'accueil');
         yield MenuItem::linkToCrud('Accueil', 'fas fa-home-alt', Accueil::class);
-        /*yield MenuItem::linkToCrud('Background', 'fas fa-home-alt', Background::class);
+        yield MenuItem::linkToCrud('Background', 'fas fa-home-alt', Background::class);
         yield MenuItem::linkToCrud('Classe', 'fas fa-home-alt', Classe::class);
         yield MenuItem::linkToCrud('Equipe', 'fas fa-home-alt', Equipe::class);
         yield MenuItem::linkToCrud('ImageGroup', 'fas fa-home-alt', ImageGroup::class);
@@ -55,6 +55,6 @@ class AdminController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Presentation', 'fas fa-home-alt', Presentation::class);
         yield MenuItem::linkToCrud('Text', 'fas fa-home-alt', Text::class);
         yield MenuItem::linkToCrud('User', 'fas fa-home-alt', User::class);
-        yield MenuItem::linkToCrud('Video', 'fas fa-home-alt', Video::class);*/
+        yield MenuItem::linkToCrud('Video', 'fas fa-home-alt', Video::class);
     }
 }

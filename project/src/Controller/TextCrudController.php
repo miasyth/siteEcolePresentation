@@ -1,6 +1,6 @@
 <?php
 
-namespace Text;
+namespace App\Controller;
 
 use App\Entity\Text;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

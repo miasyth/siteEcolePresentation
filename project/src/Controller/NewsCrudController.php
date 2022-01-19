@@ -1,6 +1,6 @@
 <?php
 
-namespace News;
+namespace App\Controller;
 
 use App\Entity\News;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

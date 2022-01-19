@@ -1,6 +1,6 @@
 <?php
 
-namespace Video;
+namespace App\Controller;
 
 use App\Entity\Video;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

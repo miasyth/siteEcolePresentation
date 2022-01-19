@@ -1,6 +1,6 @@
 <?php
 
-namespace Photo;
+namespace App\Controller;
 
 use App\Entity\Photo;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

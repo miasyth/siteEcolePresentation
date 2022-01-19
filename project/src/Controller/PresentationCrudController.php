@@ -1,6 +1,6 @@
 <?php
 
-namespace Presentation;
+namespace App\Controller;
 
 use App\Entity\Presentation;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

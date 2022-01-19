@@ -1,6 +1,6 @@
 <?php
 
-namespace ImageGroup;
+namespace App\Controller;
 
 use App\Entity\ImageGroup;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;

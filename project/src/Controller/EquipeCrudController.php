@@ -1,6 +1,6 @@
 <?php
 
-namespace Equipe;
+namespace App\Controller;
 
 use App\Entity\Equipe;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
