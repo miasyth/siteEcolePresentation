@@ -16,6 +16,7 @@ use App\Entity\ImageGroup;
 use App\Entity\Presentation;
 use App\Controller\AccueilCrudController;
 use App\Controller\BackgroundCrudController;
+use App\Entity\Mail;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -48,7 +49,7 @@ class AdminController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Classe', 'fas fa-home-alt', Classe::class);
         yield MenuItem::linkToCrud('Equipe', 'fas fa-home-alt', Equipe::class);
         yield MenuItem::linkToCrud('ImageGroup', 'fas fa-home-alt', ImageGroup::class);
-        yield MenuItem::linkToCrud('Mail', 'fas fa-home-alt', Accueil::class);
+        yield MenuItem::linkToCrud('Mail', 'fas fa-home-alt', Mail::class);
         yield MenuItem::linkToCrud('News', 'fas fa-home-alt', News::class);
         yield MenuItem::linkToCrud('PDF', 'fas fa-home-alt', PDF::class);
         yield MenuItem::linkToCrud('Photo', 'fas fa-home-alt', Photo::class);
