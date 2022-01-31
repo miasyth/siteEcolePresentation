@@ -16,5 +16,5 @@ if(date.jour>=spring.jour && date.mois==spring.mois || date.mois>spring.mois && 
     document.getElementById(`container`).style.backgroundImage = "url('img/Fond/Automne.jpg')";
 } else {
     //hiver
-    document.getElementById(`container`).style.backgroundImage = "url('img/Fond/Hiver1.jpg')";
+    document.getElementById(`container`).style.backgroundImage = "url('img/Fond/Hiver.jpg')";
 }
