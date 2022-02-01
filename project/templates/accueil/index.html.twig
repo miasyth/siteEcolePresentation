@@ -35,25 +35,19 @@
         </div>
         <div class="blockHoraires">
             <div id="listHoraires">
-                <div>
-                    <p>Ouverture de</p>
-                    <p>7h30 à 19h</p>
-                </div>
-                <hr color="black" width="70px">
-                <div>
-                    <p>Garderie de</p>
-                    <p>7h30 à 8h<br>16h30 à 19h</p>
-                </div>
-                <hr color="black" width="70px">
-                <div>
-                    <p>Etude de</p>
-                    <p>16h45 à 17h45</p>
-                </div>
-                <hr color="black" width="70px">
-                <div>
-                    <p>Restauration sur place de</p>
-                    <p>12h à 13h45</p>
-                </div>
+                {% for horaire in horaires %}
+                    <div>
+                        <p>{{horaire[0]}} de</p>
+                        {% if horaire[2] is defined %}
+                            <p>{{horaire[1]}}<br>{{horaire[2]}}</p>
+                        {% else %}
+                            <p>{{horaire[1]}}</p>
+                        {% endif %}
+                    </div>
+                    {% if horaires|last != horaire %}
+                        <hr color="black" width="70px">
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -72,12 +66,20 @@
         <h2>Nous contacter</h2>
         <div class="coordonnees">
             <div>
-                <i class="fas fa-phone-alt"></i> 03 21 51 44 76
+                {% for phone in phones %}
+                    <i class="fas fa-phone-alt"></i> {{phone}}
+                    {% if phones|last != phone %}
+                    <br>
+                    {% endif %}
+                {% endfor %}
             </div>
             <div id="mailAddress">
-                <i class="fa fa-envelope"></i> lapresentation@orange.fr
-                <br>
-                <i class="fa fa-envelope"></i> marielapresentation@orange.fr
+                {% for mail in mails %}
+                    <i class="fa fa-envelope"></i> {{mail}}
+                    {% if mails|last != mail %}
+                    <br>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
         <br>

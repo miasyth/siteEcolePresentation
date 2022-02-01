@@ -25,9 +25,27 @@ class AccueilController extends AbstractController
             "Biblio\Biblio1.jpeg"
         ];
 
+        $horaires=[
+            ["Ouverture","7h30 à 19h"],
+            ["Garderie","7h30 à 8h","16h30 à 19h"],
+            ["Etude","16h45 à 17h45"],
+            ["Restauration sur place","12h à 13h45"]
+        ];
+
+        $phones=[
+            "03 21 51 44 76"
+        ];
+
+        $mails=[
+            "lapresentation@orange.fr",
+            "marielapresentation@orange.fr"
+        ];
+
         return $this->render('/accueil/index.html.twig', [
-            'controller_name' => 'AccueilController',
             'img' => $img,
+            'horaires' => $horaires,
+            'phones' => $phones,
+            'mails' => $mails
         ]);
     }
 
