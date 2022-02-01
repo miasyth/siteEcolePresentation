@@ -354,10 +354,12 @@ hr {
 .div_presentation{
     text-align: center;
 }
+
 .div_presentation a{
     color: black;
     font-weight: bold;
 }
+
 .div_presentation hr{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -365,17 +367,8 @@ hr {
     color: black;
 }
 
-.Volet_Pastoral label {
-    font-weight: bold;
-}
-
-.Reglement_interieur {
+.PDF {
     padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-.Projet_éducatif{
     padding-bottom: 10px;
     text-decoration: none;
 }

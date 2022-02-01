@@ -10,20 +10,18 @@
 
             <hr width="20%" color= "#40a4bc" align="left">
 
-            <p>La vie à l'école Sainte Marie de La Présentation.</p>
-            <p>Une école où il fait bon d'apprendre.</p>
-            <p>Un enseignement de qualité, des grandes classes.</p>
-            <p>Deux cours maternelle et Primaire.</p>
-            <p>Un accueil dès 2 ans, un accès handicapé.</p>
-            <p>La semaine sur 4 jours, un accueil de 7h30 à 19h.</p>
-            <p>Une ambiance familiale...</p>
-            <p>Le respect de chacun.</p>
+            {% for text in pres %}
+                    <p>{{text}}</p>
+            {% endfor %}
         </div>
         <p>
-        L'établissement Sainte Marie de la Présentation se trouve à 5 minutes de la gare à pied. <br>
-        Nous accueillons les enfants de 2 à 11 ans, allant de la toute petite section (TPS) au cours moyens 2ème année (CM2), domiciliés à Arras et à ses alentours.
+            {% for text in desc %}
+                    {{text}}
+            {% if desc|last != text %}
+                <br>
+            {% endif %}
+            {% endfor %}
         </p>
-        <p>
 
         <div class="slideshow-container">
 
@@ -35,26 +33,16 @@
 
         </div>
     </div>
-    <div class="container">
-        <br>
-        <hr width="20%" color= "#40a4bc">
-        <div class= "div_presentation">
-            <div class="Reglement_interieur">
+    <br>
+    <br>
+    <div class= "div_presentation">
+        {% for PDF in PDFs %}
+            <div class="PDF">
                 <i class="fas fa-file-pdf"></i>
-                <a href="PDF\Reglement\{{reglement}}" target="_blank">Notre réglement intérieur</a>
+                <a href="PDF\{{PDF[1]}}" target="_blank">{{PDF[0]}}</a>
                 <hr width="20%" color= "#40a4bc">
             </div>
-            <div class="Projet_éducatif">
-                <i class="fas fa-file-pdf"></i>
-                <a href="PDF\Projet_éducatif\{{projetEducatif}}" target="_blank">Le Projet éducatif</a>
-                <hr width="20%" color= "#40a4bc">
-            </div>
-            <div class="Volet_pastoral">
-                <i class="fas fa-file-pdf"></i>
-                <a href="PDF\Volet_pastoral\{{voletPastoral}}" target="_blank">Volet Pastoral</a>
-                <hr width="20%" color= "#40a4bc">
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <br>
 {% endblock %}
