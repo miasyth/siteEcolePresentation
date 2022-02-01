@@ -8,12 +8,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
- * @ORM\Entity(repositoryClass=AccueilRepository::class) 
- * @ApiResource( 
- *     normalizationContext={"groups"={"accueil:read"}},
- *     denormalizationContext={"groups"={"accueil:write"}},
- *     itemOperations={"put","get","delete"}
- * )
+ * @ORM\Entity(repositoryClass=AccueilRepository::class)
  */
 class Accueil
 {
@@ -21,43 +16,36 @@ class Accueil
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"accueil:read","accueil:write"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"accueil:read","accueil:write"})
      */
     private $horaireOuverture;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"accueil:read","accueil:write"})
      */
     private $horaireGarderieMatin;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"accueil:read","accueil:write"})
      */
     private $horaireGarderieSoir;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"accueil:read","accueil:write"})
      */
     private $horaireEtude;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"accueil:read","accueil:write"})
      */
     private $horaireCantine;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"accueil:read","accueil:write"})
      */
     private $tel;
 

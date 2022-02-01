@@ -9,11 +9,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=PDFRepository::class)
- * @ApiResource( 
- *     normalizationContext={"groups"={"pdf:read"}},
- *     denormalizationContext={"groups"={"pdf:write"}},
- *     itemOperations={"put","get","delete"}
- * )
  */
 class PDF
 {
@@ -21,37 +16,31 @@ class PDF
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"pdf:read","pdf:write"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
-     * @Groups({"pdf:read","pdf:write"})
      */
     private $pres;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
-     * @Groups({"pdf:read","pdf:write"})
      */
     private $ordre;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"pdf:read","pdf:write"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"pdf:read","pdf:write"})
      */
     private $url;
 
     /**
      * @ORM\ManyToOne(targetEntity=News::class, inversedBy="pDFs")
-     * @Groups({"pdf:read","pdf:write"})
      */
     private $news;
 

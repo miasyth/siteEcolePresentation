@@ -11,11 +11,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=ClasseRepository::class)
- * @ApiResource( 
- *     normalizationContext={"groups"={"classe:read"}},
- *     denormalizationContext={"groups"={"classe:write"}},
- *     itemOperations={"put","get","delete"}
- * )
  */
 class Classe
 {
@@ -23,49 +18,41 @@ class Classe
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"classe:read","classe:write"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"classe:read","classe:write"})
      */
     private $abreviation;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"classe:read","classe:write"})
      */
     private $fullNAME;
 
     /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="classe")
-     * @Groups({"classe:read","classe:write"})
      */
     private $users;
 
     /**
      * @ORM\OneToOne(targetEntity=Photo::class, cascade={"persist", "remove"})
-     * @Groups({"classe:read","classe:write"})
      */
     private $illusatration;
 
     /**
      * @ORM\OneToOne(targetEntity=News::class, cascade={"persist", "remove"})
-     * @Groups({"classe:read","classe:write"})
      */
     private $contenu;
 
     /**
      * @ORM\OneToMany(targetEntity=Photo::class, mappedBy="classe")
-     * @Groups({"classe:read","classe:write"})
      */
     private $photos;
 
     /**
      * @ORM\OneToMany(targetEntity=News::class, mappedBy="classe")
-     * @Groups({"classe:read","classe:write"})
      */
     private $news;
 
