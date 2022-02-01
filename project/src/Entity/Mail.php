@@ -9,11 +9,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=MailRepository::class)
- * @ApiResource( 
- *     normalizationContext={"groups"={"mail:read"}},
- *     denormalizationContext={"groups"={"mail:write"}},
- *     itemOperations={"put","get","delete"}
- * )
  */
 class Mail
 {
@@ -21,13 +16,11 @@ class Mail
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"mail:read","mail:write"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Groups({"mail:read","mail:write"})
      */
     private $mail;
 

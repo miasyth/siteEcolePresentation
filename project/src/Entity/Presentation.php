@@ -9,11 +9,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=PresentationRepository::class)
- * @ApiResource( 
- *     normalizationContext={"groups"={"presentation:read"}},
- *     denormalizationContext={"groups"={"presentation:write"}},
- *     itemOperations={"put","get","delete"}
- * )
  */
 class Presentation
 {
@@ -21,13 +16,11 @@ class Presentation
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"presentation:read","presentation:write"})
      */
     private $id;
 
     /**
      * @ORM\OneToOne(targetEntity=Text::class, cascade={"persist", "remove"})
-     * @Groups({"presentation:read","presentation:write"})
      */
     private $text;
 
