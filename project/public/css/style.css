@@ -152,6 +152,7 @@ body{
     text-align: justify;
     position: relative;
     background-size: 100%;
+    padding: 0px 15px;
 }
 
 /*____________________________________________________________*/
@@ -284,6 +285,10 @@ hr {
 .contact {
     background-color: #C4C4C4;
     text-align: center;
+}
+
+#mailAddress {
+    text-align: start;
 }
 
 .contact h2 {

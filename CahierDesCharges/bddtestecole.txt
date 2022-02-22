@@ -1,0 +1,114 @@
+CREATE TABLE User (
+
+    id INT PRIMARY KEY NOT NULL,
+    username VARCHAR(),
+    password VARCHAR(),
+    admin BOOLEAN,
+
+)
+
+CREATE TABLE Utilisateur (
+
+    id INT PRIMARY KEY NOT NULL,
+    civilite VARCHAR(),
+    name VARCHAR(),
+
+)
+
+CREATE TABLE Class (
+
+    id INT PRIMARY KEY NOT NULL,
+    abreviation VARCHAR(),
+    fullname VARCHAR(),
+
+)
+
+CREATE TABLE Photo (
+
+    id INT PRIMARY KEY NOT NULL,
+    presentation BOOLEAN,
+    accueil BOOLEAN,
+    order INT(),
+    name VARCHAR(),
+    url VARCHAR(),
+
+)
+
+CREATE TABLE Equipe (
+
+    id INT PRIMARY KEY NOT NULL,
+    description Array,
+
+)
+
+CREATE TABLE Background (
+
+    id INT PRIMARY KEY NOT NULL,
+    name VARCHAR(),
+
+)
+
+
+CREATE TABLE ImageGroup (
+
+    id INT PRIMARY KEY NOT NULL,
+    order INT,
+    type VARCHAR(255),
+
+)
+
+CREATE TABLE News (
+
+    id INT PRIMARY KEY NOT NULL,
+    title VARCHAR(255),
+    date DATE,
+
+)
+
+CREATE TABLE Video {
+
+    id INT PRIMARY KEY NOT NULL,
+    order INT,
+    name VARCHAR(50),
+    url VARCHAR(),
+
+)
+
+CREATE TABLE Text (
+
+    id INT PRIMARY KEY NOT NULL,
+    order INT,
+    name VARCHAR(50),
+    url VARCHAR(),
+
+
+)
+
+CREATE TABLE PDF (
+
+    id INT PRIMARY KEY NOT NULL,
+    Pres BOOLEAN,
+    order INT,
+    name VARCHAR(50),
+    url VARCHAR(),
+
+)
+
+CREATE TABLE accueil (
+
+    id INT PRIMARY KEY NOT NULL,
+    horaireOuverture VARCHAR(),
+    horaireGarderieMatin VARCHAR(),
+    horaireGarderieSoir VARCHAR(),
+    horaireEtude VARCHAR(),
+    horaireCantine VARCHAR(),
+    tel VARCHAR(),
+    mail Array,
+
+)
+
+CREATE TABLE presentation (
+
+    id INT PRIMARY KEY NOT NULL,
+
+) 
